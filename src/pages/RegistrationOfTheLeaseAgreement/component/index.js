@@ -1,0 +1,306 @@
+import React, {useEffect, Component} from 'react';
+import styles from "./EnterRegistrationOfTheLeaseAgreementComponent.module.scss";
+import AuthRegistrationOfTheAgreement from "../../EImzo/E-Imzo";
+import {request} from "../../../utils/request";
+import {getUserData, updateState} from "../../../redux/actions/RentAction";
+import {IJARASTORAGE_NAME} from "../../../utils/constants";
+
+class EnterRegistrationOfTheLeaseAgreementComponent extends Component {
+    EIMZO_MAJOR = 3;
+    EIMZO_MINOR = 37;
+    errorCAPIWS = 'Ошибка соединения с E-IMZO. Возможно у вас не установлен модуль E-IMZO или Браузер E-IMZO.';
+    errorBrowserWS = 'Браузер не поддерживает технологию WebSocket. Установите последнюю версию браузера.';
+    errorUpdateApp = 'ВНИМАНИЕ !!! Установите новую версию приложения E-IMZO или Браузера E-IMZO.<br /><a href="https://e-imzo.uz/main/downloads/" role="button">Скачать ПО E-IMZO</a>';
+    errorWrongPassword = 'Пароль неверный.';
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            ticket: undefined,
+            tin: undefined,
+            ticket_session_id: undefined,
+            pkcs7: undefined,
+            keyId: undefined,
+        }
+    }
+
+    componentDidMount() {
+        request({
+            url: "https://my3.soliq.uz/api/auth/oauth/get/eds-ticket",
+            method: "get"
+        })
+            .then(res => {
+                this.state.ticket = res.ticket
+                this.state.ticket_session_id = res.headers.ticket_session_id
+                this.setState(this.state)
+            })
+        window.onload = () => this.AppLoad();
+    }
+
+    getToken = () => {
+        request({
+            url: "https://my3.soliq.uz/api/auth/oauth/login/eds/v2",
+            method: "post",
+            data: {
+                pkcs7: this.state.pkcs7,
+                ticketSessionId: this.state.ticket_session_id
+            }
+        })
+            .then(res => {
+                console.log(res)
+                if (res.access_token) {
+                    localStorage.setItem("refresh_token", res.refresh_token)
+                    localStorage.setItem(IJARASTORAGE_NAME, res.access_token)
+                }
+            })
+    }
+    AppLoad = () => {
+
+        window.window.EIMZOClient.API_KEYS = [
+            'localhost', '96D0C1491615C82B9A54D9989779DF825B690748224C2B04F500F370D51827CE2644D8D4A82C18184D73AB8530BB8ED537269603F61DB0D03D2104ABF789970B',
+            '127.0.0.1', 'A7BCFA5D490B351BE0754130DF03A068F855DB4333D43921125B9CF2670EF6A40370C646B90401955E1F7BC9CDBF59CE0B2C5467D820BE189C845D0B79CFC96F',
+            'null', 'E0A205EC4E7B78BBB56AFF83A733A1BB9FD39D562E67978CC5E7D73B0951DB1954595A20672A63332535E13CC6EC1E1FC8857BB09E0855D7E76E411B6FA16E9D',
+            'dls.yt.uz', 'EDC1D4AB5B02066FB3FEB9382DE6A7F8CBD095E46474B07568BC44C8DAE27B3893E75B79280EA82A38AD42D10EA0D600E6CE7E89D1629221E4363E2D78650516'
+        ];
+        this.uiLoading();
+        const check = (major, minor) => {
+            var newVersion = this.EIMZO_MAJOR * 100 + this.EIMZO_MINOR;
+            var installedVersion = parseInt(major) * 100 + parseInt(minor);
+            if (installedVersion < newVersion) {
+                this.uiUpdateApp();
+            } else {
+                window.EIMZOClient.installApiKeys(() => {
+                    this.uiLoadKeys();
+                }, (e, r) => {
+                    if (r) {
+                        this.uiShowMessage(r);
+                    } else {
+                        this.wsError(e);
+                    }
+                });
+            }
+        }
+        window.window.EIMZOClient.checkVersion((major, minor) => check(major, minor), (e, r) => {
+            if (r) {
+                this.uiShowMessage(r);
+            } else {
+                this.uiNotLoaded(e);
+            }
+        });
+    }
+    uiShowMessage = (message) => {
+        alert(message);
+    }
+    uiLoading = () => {
+        var l = document.getElementById('message');
+        l.innerHTML = 'Загрузка ...';
+        l.style.color = 'red';
+    }
+    uiNotLoaded = (e) => {
+        var l = document.getElementById('message');
+        l.innerHTML = '';
+        if (e) {
+            this.wsError(e);
+        } else {
+            this.uiShowMessage(this.errorBrowserWS);
+        }
+    }
+    uiUpdateApp = () => {
+        var l = document.getElementById('message');
+        l.innerHTML = this.errorUpdateApp;
+    }
+    uiLoadKeys = () => {
+        this.uiClearCombo();
+        window.EIMZOClient.listAllUserKeys((o, i) => {
+            console.log(o)
+            console.log(i)
+            var itemId = "itm-" + o.serialNumber + "-" + i;
+            return itemId;
+        }, (itemId, v) => {
+            return this.uiCreateItem(itemId, v);
+        }, (items, firstId) => {
+            this.uiFillCombo(items);
+            this.uiLoaded();
+            this.uiComboSelect(firstId);
+        }, (e, r) => {
+            if (e) {
+                this.uiShowMessage(this.errorCAPIWS + " : " + e);
+            } else {
+                this.uiShowMessage(r);
+            }
+        });
+    }
+    uiComboSelect = (itm) => {
+        if (itm) {
+            var id = document.getElementById(itm);
+            id.setAttribute('selected', 'true');
+        }
+    }
+    uiClearCombo = () => {
+        var combo = document.testform.key;
+        combo.length = 0;
+    }
+    uiFillCombo = (items) => {
+        var combo = document.getElementById("testform").key;
+        for (var itm in items) {
+            combo.append(items[itm]);
+        }
+    }
+    uiLoaded = () => {
+        var l = document.getElementById('message');
+        l.innerHTML = '';
+    }
+    uiCreateItem = (itmkey, vo) => {
+        var now = new Date();
+        vo.expired = window.dates.compare(now, vo.validTo) > 0;
+        var itm = document.createElement("option");
+        itm.value = itmkey;
+        itm.text = vo.CN;
+        if (!vo.expired) {
+
+        } else {
+            itm.style.color = 'gray';
+            itm.text = itm.text + ' (срок истек)';
+        }
+        itm.setAttribute('vo', JSON.stringify(vo));
+        itm.setAttribute('id', itmkey);
+        return itm;
+    }
+    wsError = (e) => {
+        if (e) {
+            this.uiShowMessage(this.errorCAPIWS + " : " + e);
+        } else {
+            this.uiShowMessage(this.errorBrowserWS);
+        }
+    };
+    cbChanged = () => {
+
+    }
+    sign = () => {
+        var itm = document.getElementById("testform").key.value;
+        if (itm) {
+            var id = document.getElementById(itm);
+            var vo = JSON.parse(id.getAttribute('vo'));
+            localStorage.setItem("vo",id.getAttribute('vo'))
+            var data = this.state.ticket;
+            var keyId = this.state.keyId;
+
+            if (keyId) {
+                window.EIMZOClient.createPkcs7(keyId, data, null, (pkcs7) => {
+                    this.setState({pkcs7})
+                    this.getToken()
+                    this.props.getAccount()
+                }, (e, r) => {
+                    if (r) {
+                        if (r.indexOf("BadPaddingException") != -1) {
+                            this.uiShowMessage(this.errorWrongPassword);
+                        } else {
+                            this.uiShowMessage(r);
+                        }
+                    } else {
+                        document.getElementById('keyId').innerHTML = '';
+                        this.uiShowMessage(this.errorBrowserWS);
+                    }
+                    if (e) this.wsError(e);
+                });
+            } else {
+                window.EIMZOClient.loadKey(vo, (id) => {
+                    this.setState({keyId: id});
+                    localStorage.setItem("keyId",id)
+                    window.EIMZOClient.createPkcs7(id, data, null, (pkcs7) => {
+                        this.setState({pkcs7})
+                        this.getToken()
+                        this.props.getAccount()
+                    }, (e, r) => {
+                        if (r) {
+                            if (r.indexOf("BadPaddingException") != -1) {
+                                this.uiShowMessage(this.errorWrongPassword);
+                            } else {
+                                this.uiShowMessage(r);
+                            }
+                        } else {
+                            this.uiShowMessage(this.errorBrowserWS);
+                        }
+                        if (e) this.wsError(e);
+                    });
+                }, (e, r) => {
+                    if (r) {
+                        if (r.indexOf("BadPaddingException") != -1) {
+                            this.uiShowMessage(this.errorWrongPassword);
+                        } else {
+                            this.uiShowMessage(r);
+                        }
+                    } else {
+                        this.uiShowMessage(this.errorBrowserWS);
+                    }
+                    if (e) this.wsError(e);
+                });
+            }
+        }
+    };
+
+
+    render() {
+        const {updateState, getUserData} = this.props
+
+
+        // const validate = (event) => {
+        //     event.target.value = event.target.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1').replace(/^0[^.]/, '0');
+        //     setTin(event.target.value)
+        // }
+        // const setPin = () => {
+        //     if (tin.length == 14) {
+        //         getUserData(tin).then(res => {
+        //             console.log(res)
+        //             updateState({lessee: res})
+        //         })
+        //         updateState({pinfl: tin})
+        //     }
+        // }
+
+        return (
+            <div className={`upBox ${styles.enterComponent}`}>
+                {/*<div className="d-flex justify-content-center">*/}
+                {/*    <div className={styles.inputs}>*/}
+                {/*        <form name="testform" id="testform">*/}
+                {/*            <label>JShShIR ni kiriting <span className="withStar ">*</span></label>*/}
+                {/*            <div className="d-flex">*/}
+                {/*                /!*<input type="text" placeholder="-" className="input-style font-roboto-light w-100"*!/*/}
+                {/*                /!*       onChange={validate} max={14}/>*!/*/}
+                {/*            </div>*/}
+                {/*            <select name="key" onChange={this.cbChanged}>*/}
+                {/*            </select>*/}
+                {/*            <div className={styles.footerBtn}>*/}
+                {/*                <button className={styles.back}>*/}
+                {/*                    <span className="icon icon-back"/>*/}
+                {/*                    Ortga*/}
+                {/*                </button>*/}
+                {/*                <button className={styles.save} onClick={this.sign}>*/}
+                {/*                    <span className="icon icon-search"/>*/}
+                {/*                    Tanlash*/}
+                {/*                </button>*/}
+                {/*            </div>*/}
+                {/*        </form>*/}
+                {/*    </div>*/}
+
+                {/*</div>*/}
+                <form name="testform" id="testform">
+                    <label id="message" style={{color: "red"}}></label>
+                    Выберите ключ <br/>
+                    <select name="key" onChange={() => {
+                        this.props.updateState({keyId: undefined})
+                        this.setState({keyId: undefined})
+                    }}>
+                    </select>
+
+                    <button onClick={this.sign} type="button">Подписать</button>
+                    <br/>
+                    {/*ID ключа <label id="keyId"></label><br/>*/}
+
+                </form>
+            </div>
+        );
+    }
+};
+
+export default EnterRegistrationOfTheLeaseAgreementComponent;

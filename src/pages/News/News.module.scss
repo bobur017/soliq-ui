@@ -1,0 +1,559 @@
+@import "src/styles/colors";
+
+.main {
+  padding-bottom: 280px;
+
+  .path {
+    color: #b6bccd;
+
+    img {
+      margin: 0 20px;
+    }
+  }
+
+  button {
+    border-radius: 8px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span {
+      background-color: white;
+    }
+  }
+
+  .image {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 4px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+
+    div {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+
+      span {
+        display: none;
+        margin-left: 10px;
+        margin-top: 10px;
+        position: absolute;
+        background-color: #ffffff;
+      }
+
+      &:hover {
+        background: linear-gradient(180deg,
+            rgba(0, 0, 0, 0.464) 0%,
+            rgba(77, 77, 79, 0.184) 100%);
+
+        span {
+          display: block;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .col {
+    width: 500px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+  }
+
+  .row {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    margin-right: -35px;
+  }
+
+  .card {
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    transition: all 0.2s linear;
+    background: #ffffff;
+    // border: 1px solid #D4E5FF;
+    box-shadow: 0px 10px 20px rgba(135, 138, 146, 0.15);
+    border-radius: 8px;
+
+    .popoverActive {
+      text-align: center;
+      border-radius: 8px;
+      margin-left: 35px;
+      margin-top: 25px;
+      background-color: #ffffff;
+      position: absolute;
+      z-index: 10;
+
+      &:hover {
+        background-color: #ffffff !important;
+      }
+
+      div {
+        width: 170px;
+        padding: 5px;
+
+        &:hover {
+          background-color: #174aa4;
+          color: #ffffff;
+
+          span {
+            background-color: #ffffff;
+          }
+        }
+
+        span {
+          margin: 0 5px 5px;
+          background-color: black;
+        }
+      }
+    }
+
+    .popoverInActive {
+      border-radius: 8px;
+      margin-left: 35px;
+      margin-top: 25px;
+      background-color: #ffffff;
+      position: absolute;
+      display: none;
+
+      &:hover {
+        background-color: #ffffff !important;
+      }
+
+      div {
+        width: 170px;
+        padding: 5px;
+
+        &:hover {
+          background-color: #174aa4;
+          color: #ffffff;
+
+          span {
+            background-color: #ffffff;
+          }
+        }
+
+        span {
+          background-color: black;
+        }
+      }
+    }
+
+    div {
+      div {
+        color: #282f38;
+        font-size: 16px;
+        // margin-left: 5px;
+      }
+    }
+  }
+
+  .newsFooter {
+    justify-content: space-between;
+    display: flex;
+
+    div {
+      a {
+        color: #174aa4;
+      }
+    }
+  }
+
+  .dashboard {
+    background: white;
+    backdrop-filter: blur(40px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+    margin-bottom: 30px;
+    box-shadow: 0px 10px 20px rgba(135, 138, 146, 0.15);
+    border-radius: 16px;
+
+    input {
+      width: 150px;
+      margin-left: 30px;
+      border-radius: 8px;
+      color: #282f38;
+      border: solid 1px #b2c3ee;
+      padding: 5px;
+      text-align: center;
+      padding-right: 10px;
+    }
+
+    input[type="date"]::-webkit-calendar-picker-indicator {
+      padding: 20;
+    }
+
+    h3 {
+      margin: 0;
+      font-size: 22px;
+      line-height: 26px;
+      color: $color-icon;
+    }
+  }
+
+  #ok {
+    fill: #174aa4;
+  }
+
+  .icons {
+    background-color: #777b82;
+    right: 10px;
+    top: 10px;
+  }
+
+  .buttonActive {
+    text-align: center;
+    border: 1px solid #b6bccd;
+    padding: 5px;
+    width: 100px;
+
+    img {
+      padding: 3px;
+    }
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .newsImageService {
+    width: 32%;
+    height: 475px;
+    background-color: #ffffff;
+    box-shadow: 0px 10px 20px rgba(135, 138, 146, 0.15);
+    border-radius: 8px;
+    margin: 0px 0px 20px;
+    padding: 30px;
+
+    &:first-child {
+      font-size: 28px;
+    }
+
+    div:nth-child(2) {
+      margin-top: 10px;
+      width: 100%;
+      height: 80%;
+      border: 2px dashed #b3c3ee;
+      // margin: 5px 5px 5px 5px;
+      text-align: center;
+    }
+
+    span {
+      text-align: center;
+      font-size: 16px;
+
+      label {
+        color: #174aa4;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .newsTools {
+    background-color: #ffffff;
+    width: 64%;
+    height: 475px;
+    box-shadow: 0px 10px 20px rgba(135, 138, 146, 0.15);
+    border-radius: 8px;
+    padding: 30px 30px 70px;
+    margin: 0px 20px 20px;
+
+    span {
+      &:first-child {
+        font-size: 28px;
+      }
+    }
+  }
+
+  .textEditor {
+    background-color: #ffffff;
+    width: 100%;
+    height: 475px;
+    box-shadow: 0px 10px 20px rgba(135, 138, 146, 0.15);
+    border-radius: 8px;
+    padding: 30px;
+    // margin: 20px;
+  }
+
+  .uploadImage {
+    padding: 30px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .radioBtn {
+    width: 160px;
+    padding: 18px;
+    background-color: #ffffff;
+    border: #174aa4 solid 0.5px;
+  }
+
+  .radioBtnDeActive {
+    width: 160px;
+    padding: 18px;
+    background-color: #ffffff;
+    border: #D8E1F6 solid 0.5px;
+  }
+
+  .dots {
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 12px;
+    bottom: 13px;
+
+    span {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      color: #b6bccd;
+    }
+
+    div {
+      margin-left: 5px;
+      background-color: #b6bccd;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+    }
+  }
+
+  .footerBtn {
+    transform: translateY(55px);
+    background: #e9573f;
+    border: 1px solid #e9573f;
+    box-shadow: 0px 10px 20px rgba(233, 87, 63, 0.22);
+    border-radius: 60px;
+    margin-right: 20px;
+    height: 50px;
+    width: 218px;
+    font-weight: 700;
+    font-size: 18px;
+    color: white;
+    line-height: 130%;
+
+    span {
+      background-color: white;
+      margin-right: 10px;
+      width: 14px;
+    }
+
+    &:last-child {
+      width: 168px;
+      margin-right: 0;
+      background: #8cc152;
+      box-shadow: 0px 20px 20px rgba(140, 193, 82, 0.22);
+      border-radius: 60px;
+      border: 1px solid #8cc152;
+    }
+  }
+
+  .app {
+    height: 350px;
+  }
+
+  .editorClassName {
+    height: 300px;
+  }
+
+  .colNews {
+    display: inline;
+    width: 560px;
+    margin-left: 20px;
+  }
+
+  .mainNews {
+    width: 1140px;
+  }
+
+  .mainModalRec {
+    position: fixed;
+    top: 100px;
+    min-width: 400px;
+    left: calc(50% - 200px);
+    background-color: $color-white;
+    border-radius: 8px;
+    height: 200px;
+    ;
+    box-shadow: 0px 0px 50px -10px #000;
+
+    .closeBtn {
+      display: block;
+      margin-left: auto;
+      margin-right: 24.5px;
+      background-color: transparent;
+      margin-top: 24.5px;
+
+      span {
+        background: #777B82;
+      }
+    }
+
+    h3,
+    p {
+      text-align: center;
+      margin-top: 0;
+    }
+
+    .selectMain {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    div {
+      button {
+        padding-top: 5px;
+        min-width: 122px;
+        height: 47px;
+        margin-top: 35px;
+
+        &:nth-child(1) {
+          background: #E9573F;
+          box-shadow: 0px 20px 20px rgba(233, 87, 63, 0.22);
+          margin-right: 30px;
+        }
+
+        &:nth-child(2) {
+          background: #8CC152;
+          box-shadow: 0px 20px 20px rgba(140, 193, 82, 0.22);
+        }
+
+        border-radius: 60px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 130%;
+        color: $color-white;
+      }
+    }
+  }
+
+  .mainModalRec2 {
+    position: fixed;
+    top: 100px;
+    min-width: 1200px;
+    left: calc(40% - 400px);
+    background-color: $color-white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 50px -10px #000;
+
+    .closeBtn {
+      display: block;
+      margin-left: auto;
+      margin-right: 24.5px;
+      background-color: transparent;
+      margin-top: 24.5px;
+
+      span {
+        background: #777B82;
+      }
+    }
+
+    h3,
+    p {
+      text-align: center;
+      margin-top: 0;
+    }
+
+    .selectMain {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    div {
+      button {
+        padding-top: 5px;
+        min-width: 122px;
+        height: 47px;
+        margin-top: 35px;
+
+        &:nth-child(1) {
+          background: #E9573F;
+          box-shadow: 0px 20px 20px rgba(233, 87, 63, 0.22);
+          margin-right: 30px;
+        }
+
+        &:nth-child(2) {
+          background: #8CC152;
+          box-shadow: 0px 20px 20px rgba(140, 193, 82, 0.22);
+        }
+
+        border-radius: 60px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 130%;
+        color: $color-white;
+      }
+    }
+  }
+
+  .myInputs {
+    margin-top: 30px;
+    width: 100%;
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: 400;
+      font-size: 16px;
+      position: relative;
+    }
+
+    input {
+      background: #FFF;
+      color: $color-newBlack;
+      border: 1px solid #B3C3EE;
+      border-radius: 8px;
+      height: 50px;
+      padding-left: 20px;
+      padding-right: 20px;
+      font-size: 14px;
+
+      &:focus {
+        outline: none;
+      }
+
+      &:disabled {
+        background: #EBEDF1;
+        border: 1px solid #EBEDF1;
+      }
+    }
+
+    textarea {
+      background: #F6F6F7;
+      color: $color-newBlack;
+      border-radius: 8px;
+      border: none;
+      padding-top: 20px;
+      padding-left: 20px;
+      padding-right: 20px;
+      font-size: 14px;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    select {
+      border: 1px solid #B6BCCD;
+      border-radius: 8px;
+      height: 50px;
+      padding-left: 20px;
+      padding-right: 20px;
+      font-size: 14px;
+    }
+  }
+
+}

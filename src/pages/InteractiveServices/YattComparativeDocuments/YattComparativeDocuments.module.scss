@@ -1,0 +1,137 @@
+/**
+ * Created by Watson on 05.05.2022.
+ */
+
+@import "../../../styles/colors";
+
+.yattComparativeDocumentsDebtInfo{
+  margin-top: 30px;
+  margin-bottom: 50px;
+  .forms {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(17, 24, 39, 0.05);
+    backdrop-filter: blur(40px);
+    border-radius: 16px;
+    padding:30px 30px 50px 30px;
+    label{
+      display: block;
+      color: #282F38;
+      margin-bottom: 10px;
+    }
+
+  }
+
+  .createShape {
+    background: #8CC152;
+    box-shadow: 0px 20px 20px rgba(140, 193, 82, 0.22);
+    border-radius: 60px;
+    padding: 12px 50px;
+    font-weight: 700;
+    font-size: 18px;
+    color: white;
+    position: absolute;
+    right: 30px;
+    bottom: -25px;
+    span{
+      background-color: #fff;
+      margin-right: 10px;
+    }
+  }
+ /* margin-top: 45px;
+  .p20{
+    padding-right: 20px;
+  }*/
+}
+
+.yattComparativeDocumentsDebt{
+  h1 {
+    font-size: 28px;
+    line-height: 33px;
+    color: #282F38;
+  }
+
+  .forms {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(17, 24, 39, 0.05);
+    backdrop-filter: blur(40px);
+    border-radius: 16px;
+    padding:20px 30px 50px 30px;
+
+    input {
+      //background: #F6F6F7;
+      padding-left: 20px;
+      height: 50px;
+      &[disabled]{
+        background: #EBEDF1;
+        border-color: #EBEDF1;
+      }
+    }
+
+    .loupe {
+      border-radius: 8px 0px 0px 8px;
+      display: inline-block;
+    }
+
+    button {
+      background: #325ECD;
+      border-radius: 0px 8px 8px 0px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+
+      span {
+        background-color: white;
+      }
+    }
+  }
+
+  .path {
+    margin: 20px 0 20px 0;
+
+    img {
+      margin: 0 20px;
+    }
+
+    span {
+      color: #B6BCCD;
+    }
+  }
+ /* h1{
+    margin-bottom: 45px;
+  }
+  .inputMarginBottom{
+    margin-bottom: 35px;
+  }*/
+}
+.yattComparativeDocumentsDebtInfoView{
+  .viewDownload{
+    button, a{
+      padding-top: 19px;
+      padding-bottom: 19px;
+      box-shadow: 0px 10px 20px -10px rgba(30, 45, 86, 0.2);
+      border-radius: 5px;
+      color: $color-white;
+      font-weight: 400;
+      font-size: 20px;
+      display: flex;align-items: center;
+      justify-content: center;
+      margin-right: 20px;
+      cursor: pointer;
+    }
+    .viewBtn{
+      background-color: $color-icon;
+    }
+    .pdfBtn{
+      background-color: $color-blue;
+    }
+    .exelBtn{
+      background-color: $color-red;
+    }
+    span{
+      background-color: $color-white;
+      margin-right: 20px;
+    }
+  }
+}

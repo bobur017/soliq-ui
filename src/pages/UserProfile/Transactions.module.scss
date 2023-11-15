@@ -1,0 +1,339 @@
+@import "src/styles/colors";
+
+.transactions {
+  button {
+    border-radius: 8px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span {
+      background-color: white;
+    }
+  }
+
+  .path {
+    margin: 20px 0 20px 0;
+
+    img {
+      margin: 0 20px;
+    }
+
+    span {
+      color: #B6BCCD;
+    }
+  }
+
+  .filterBtn {
+    background-color: $color-newBlack;
+    width: 50px;
+    border-radius: 8px;
+    height: 50px;
+    margin-left: auto;
+    display: block;
+
+    span {
+      background-color: $color-white;
+    }
+  }
+
+  .dupTitleBox {
+    padding: 20px;
+
+    h3 {
+      margin: 0;
+    }
+  }
+
+  .decTabel {
+    background: $color-white;
+    backdrop-filter: blur(40px);
+    border-radius: 16px;
+
+    .page {
+      display: flex;
+      align-items: center;
+      position: relative;
+      z-index: 99999;
+
+      span {
+        background-color: $color-newBlue;
+        margin-right: 10px;
+      }
+
+      .page2 {
+        margin-left: 10px;
+        width: 80px;
+        position: relative;
+        z-index: 9999;
+      }
+
+      .page3 {
+        margin-left: 10px;
+        width: 209px;
+        position: relative;
+        z-index: 9999;
+      }
+    }
+
+    .uploadBtn {
+      padding: 8.5px 20px;
+      color: $color-newBlue;
+      background-color: transparent;
+      border: 1px solid #B6BCCD;
+      border-radius: 8px;
+      height: 50px;
+      font-size: 17px;
+      margin-left: 20px;
+    }
+
+    .mainTable {
+      // margin-top: 20px;
+      overflow-x: auto;
+
+      table {
+        border-spacing: 0;
+
+        tr {
+          &:nth-child(1) {
+            background: #F6F6F7;
+            overflow: hidden;
+          }
+
+          &:nth-child(odd) {
+            background: #F6F6F7;
+          }
+
+          &:nth-last-child(1) {
+            border-bottom: 1px solid #DDEAFF;
+
+            td {
+              border-bottom: 1px solid #DDEAFF;
+
+              &:nth-last-child(1) {
+                border-bottom-right-radius: 8px;
+              }
+
+              &:nth-child(1) {
+                border-bottom-left-radius: 8px;
+              }
+            }
+          }
+
+          th {
+            div {
+              display: flex;
+              justify-content: left;
+              align-items: center;
+            }
+
+            border-top: 1px solid #DDEAFF;
+            height: 61px;
+            font-weight: 400px;
+            font-size: 16px;
+            line-height: 150%;
+            text-align: left;
+            border-right: 1px solid #DDEAFF;
+            padding-left: 10px;
+            padding-right: 10px;
+
+            &:nth-child(1) {
+              text-align: center;
+              border-top: 1px solid #DDEAFF;
+              border-top-left-radius: 8px;
+              overflow: hidden;
+              border-left: 1px solid #DDEAFF;
+            }
+
+            &:nth-child(2) {
+              width: 360px;
+              padding-left: 10px;
+            }
+
+            &:nth-last-child(1) {
+              padding-left: 10px;
+              border-top-right-radius: 8px;
+              // width: 18px;
+            }
+          }
+
+          td {
+            height: 80px;
+            // border-right: 1px solid #DDEAFF;
+            padding-left: 10px;
+            padding-right: 10px;
+
+            span {
+              // display: block;
+
+              &:nth-child(2) {
+                color: #777B82;
+                margin-top: 10px;
+              }
+            }
+
+            &:nth-child(1) {
+              text-align: center;
+              border-left: 1px solid #DDEAFF;
+
+            }
+
+            &:nth-child(2) {
+              padding-left: 10px;
+              width: 360px;
+            }
+
+            &:nth-last-child(1) {
+              // width: 170px;
+              border-right: 1px solid #DDEAFF;
+
+              a {
+                color: #777B82;
+                text-decoration: underline;
+                line-height: 19px;
+              }
+
+              div:nth-child(2) {
+                margin-top: 85px;
+              }
+
+
+            }
+
+          }
+        }
+      }
+    }
+
+  }
+
+
+  .card {
+    margin-top: 50px;
+    width: 100%;
+    align-items: center;
+    padding: 20px;
+    transition: all 0.2s linear;
+    background: #ffffff;
+    box-shadow: 0px 10px 20px rgba(135, 138, 146, 0.15);
+    border-radius: 8px;
+  }
+
+  .tabs {
+    color: #174aa4;
+    padding: 15px;
+    text-align: center;
+    width: 150px;
+    height: 100;
+    border-bottom: #ebedf1 solid 5px;
+    cursor: pointer;
+  }
+
+  .tabsInActive {
+    cursor: pointer;
+    color: #777b82;
+    padding: 15px;
+    text-align: center;
+    width: 150px;
+    height: 100;
+    border-bottom: #ebedf1 solid 5px;
+
+    &:hover {
+      color: #174aa4;
+    }
+  }
+
+  .tabsLine {
+    margin-top: -5px;
+    margin-left: 10px;
+    border-radius: 12px;
+    width: 130px;
+    height: 5px;
+    background-color: #174aa4;
+  }
+
+  .tabsLineInActive {
+    margin-top: -5px;
+    margin-left: 10px;
+    border-radius: 12px;
+    width: 130px;
+    height: 0px;
+    background-color: #174aa4;
+  }
+
+  .buttonActive {
+    text-align: center;
+    border: 1px solid #b6bccd;
+    padding: 5px;
+    width: 100px;
+
+    img {
+      padding: 3px;
+    }
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #174AA4;
+    // height: 150px;
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px !important;
+  }
+
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+
+  .uploadBtn {
+    padding: 8.5px 20px;
+    color: $color-newBlue;
+    background-color: transparent;
+    border: 1px solid #b6bccd;
+    border-radius: 8px;
+    height: 39px;
+    margin-left: 20px;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 22px;
+  }
+
+
+  .footerBtn {
+    transform: translateY(55px);
+    background: #e9573f;
+    border: 1px solid #e9573f;
+    box-shadow: 0px 10px 20px rgba(233, 87, 63, 0.22);
+    border-radius: 60px;
+    margin-right: 20px;
+    height: 50px;
+    width: 138px;
+    font-weight: 700;
+    font-size: 18px;
+    color: white;
+    line-height: 130%;
+
+    span {
+      background-color: white;
+      margin-right: 10px;
+      width: 14px;
+    }
+
+    &:last-child {
+      width: 168px;
+      margin-right: 0;
+      background: #8cc152;
+      box-shadow: 0px 20px 20px rgba(140, 193, 82, 0.22);
+      border-radius: 60px;
+      border: 1px solid #8cc152;
+    }
+  }
+
+
+}

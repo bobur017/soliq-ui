@@ -1,0 +1,30 @@
+/**
+ * Created by Watson on 05.05.2022.
+ */
+
+@import "../../../styles/colors";
+
+.pinflStirAttachDebt{
+  .path {
+    margin:20px 0 20px 0;
+    img {
+      margin: 0 20px;
+    }
+    span {
+      color: #B6BCCD;
+    }
+  }
+  .searchBtn{
+    background: $color-newBlue;
+    border-radius: 0px 8px 8px 0px;
+    width: 50px;
+    margin-left: -3px;
+    span{
+      background-color: $color-white;
+    }
+  }
+}
+
+.pinflStirAttachDebtInfo{
+  margin-top: 30px;
+}

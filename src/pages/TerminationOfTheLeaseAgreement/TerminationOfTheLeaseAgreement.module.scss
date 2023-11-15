@@ -1,0 +1,109 @@
+/**
+ * Created by Watson on 10.05.2022.
+ */
+
+@import "../../styles/colors";
+
+.terminationOfTheLeaseAgreement{
+  .dwnTitle{
+    h2{
+      font-size: 26px;
+      padding-left: 10px;
+    }
+    .downloadBtn{
+      background-color: transparent;
+      border-radius: 5px;
+      border: 1px solid $color-gray;
+      width: 40px;
+      height: 40px;
+
+    }
+    span{
+      background-color: $color-icon;
+    }
+  }
+  .terminationInputs{
+    margin-top: 45px;
+    margin-bottom: 30px;
+  }
+  .mainBtn{
+    padding-top: 19px;
+    padding-bottom: 19px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: $color-white;
+    background-color: $color-blue;
+    box-shadow: 0px 10px 20px -10px rgba(30, 45, 86, 0.2);
+    border-radius: 5px;
+  }
+  .taxReport{
+    .taxReportTabelHeader{
+      margin-top: 30px;
+      p{
+        margin: 0;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: center;
+        background: rgba(20, 122, 214, 0.1);
+        border-radius: 5px;
+        color: $color-icon;
+        font-size: 14px;
+        margin-right: 10px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+      .terminationBtn{
+        button{
+          border: 1px solid $color-gray;
+          border-radius: 5px;
+          background-color: transparent;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          &:nth-child(1), &:nth-child(2){
+            margin-right: 10px;
+          }
+          span{
+            background-color: $color-icon;
+            width: 22px;
+            height: 22px;
+          }
+        }
+      }
+    }
+    .taxReportTabelBody{
+      margin-top: 10px;
+      p{
+        padding-left: 10px;
+        padding-right: 10px;
+        margin: 0;
+        padding-top: 19px;
+        padding-bottom: 19px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 300;
+        font-size: 16px;
+        box-shadow: 0px 10px 30px -10px rgba(0, 0, 0, 0.05);
+        border-radius: 5px;
+        color: $color-icon;
+        background-color: $color-white;
+        margin-right: 10px;
+      }
+      button{
+        box-shadow: 0px 10px 30px -10px rgba(0, 0, 0, 0.05);
+        font-size: 16px;
+        color: $color-white;
+        height: 100%;
+        width: 100%;
+        border-radius: 5px;
+        background-color: $color-blue;
+      }
+    }
+  }
+
+}

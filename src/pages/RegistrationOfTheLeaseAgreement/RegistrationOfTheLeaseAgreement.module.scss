@@ -1,0 +1,1283 @@
+/**
+ * Created by Watson on 05.07.2022.
+ */
+
+@import "../../styles/colors";
+
+.thirdPart{
+  margin-top: 50px;
+  background: $color-white;
+  box-shadow: 0px 0px 20px rgba(17, 24, 39, 0.05);
+  backdrop-filter: blur(40px);
+  border-radius: 16px;
+  padding: 30px 30px 50px 30px;
+  position: relative;
+  //z-index: -1;
+  .btnGroup{
+    position: absolute;
+    right: 30px;
+    display: flex;
+    bottom: -25px;
+    .paidBtn{
+      display: flex;
+      align-items: center;
+      padding: 14px 40px;
+      background-color: $color-newGreen;
+      color: $color-white;
+      box-shadow: 0px 20px 20px rgba(140, 193, 82, 0.22);
+      border-radius: 60px;
+
+      font-size: 18px;
+      line-height: 130%;
+      span{
+        background-color: $color-white;
+        margin-right: 10px;
+      }
+    }
+    .backBtn{
+      display: flex;
+      align-items: center;
+      padding: 14px 40px;
+      background-color: $color-newRed;
+      color: $color-white;
+      //box-shadow: 0px 20px 20px rgba(140, 193, 82, 0.22);
+      box-shadow: 0px 20px 20px rgba(233, 87, 63, 0.22);
+      border-radius: 60px;
+      line-height: 130%;
+      margin-right: 30px;
+      span{
+        background-color: $color-white;
+        margin-right: 10px;
+      }
+    }
+  }
+
+
+  h3{
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+    margin: 0;
+    color: $color-newBlack;
+  }
+  .residentialAddress112{
+    display: flex;
+    margin-top: 30px;
+    width: 100%;
+    align-items: center;
+    input{
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+    }
+    h2{
+      margin: 0;
+      font-size: 20px;
+    }
+  }
+}
+
+.path {
+  margin: 20px 0 20px 0;
+  img {
+    margin: 0 20px;
+    width: 6px;
+    height: 12px;
+  }
+  span {
+    color: #B6BCCD;
+  }
+}
+
+.RegistrationOfTheLeaseAgreementNew{
+
+  margin-bottom: 150px;
+  .twoPart{
+    display: flex;
+    h3{
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 33px;
+      margin: 0;
+      color: $color-newBlack;
+
+    }
+    h2{
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 130%;
+      color: $color-newBlack;
+      margin-top: 30px;
+    }
+    .residentialAddress1{
+      display: flex;
+      margin-top: 30px;
+      width: 100%;
+      input{
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+      }
+      h2{
+        margin: 0;
+      }
+    }
+    .leftPart{
+      padding: 30px;
+      width: 100%;
+      background-color: $color-white;
+      margin-right: 10px;
+      box-shadow: 0px 0px 20px rgba(17, 24, 39, 0.05);
+      backdrop-filter: blur(40px);
+      border-radius: 16px;
+      position: relative;
+      z-index: 999;
+    }
+    .rightPart{
+      width: 100%;
+      background-color: $color-white;
+      margin-left: 10px;
+      box-shadow: 0px 0px 20px rgba(17, 24, 39, 0.05);
+      backdrop-filter: blur(40px);
+      border-radius: 16px;
+      padding: 30px 30px 50px 30px;
+      position: relative;
+      .button{
+        margin-top: auto;
+        background-color: $color-newRed;
+        height: 50px;
+        width: 115px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        span{
+          width: 100%;
+          background-color: $color-white;
+        }
+      }
+      .additionBtn{
+        background: #325ECD;
+        box-shadow: 0px 20px 20px rgba(21, 37, 126, 0.22);
+        border-radius: 60px;
+        padding: 16px 60px;
+        color: $color-white;
+        font-weight: 700;
+        font-size: 19px;
+        line-height: 26px;
+        position: absolute;
+        bottom: -25px;
+        right: 30px;
+        span{
+          background-color: $color-white;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+  .onePart{
+    margin-top: 50px;
+    background: $color-white;
+    box-shadow: 0px 0px 20px rgba(17, 24, 39, 0.05);
+    backdrop-filter: blur(40px);
+    border-radius: 16px;
+    padding: 30px 30px 50px 30px;
+    h3{
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 33px;
+      margin: 0;
+      color: $color-newBlack;
+
+    }
+    h2{
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 130%;
+      color: $color-newBlack;
+      margin-top: 30px;
+    }
+    .residentialAddress1{
+      display: flex;
+      margin-top: 30px;
+      width: 100%;
+      input{
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+      }
+      h2{
+        margin: 0;
+      }
+    }
+    .button{
+      margin-top: auto;
+      background-color: #C19E7A;
+      height: 50px;
+      width: 80px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      span{
+        width: 100%;
+        background-color: $color-white;
+      }
+    }
+  }
+  .addBtn{
+    margin-top: auto;
+    background-color: $color-newBlue;
+    height: 50px;
+    width: 53.5px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    span{
+      width: 100%;
+      background-color: $color-white;
+    }
+  }
+  .progressMain{
+    display: flex;
+    justify-content: space-between;
+
+    margin: 30px 20px 60px 20px;
+    width: 95%;
+    .dot{
+      position: relative;
+      height: 8px;
+      width: 100%;
+      background-color: #BABDC6;
+      &:nth-child(2),  &:nth-child(3),  &:nth-child(4), {
+        //padding-right: 10%;
+      }
+      h1{
+        color: #BABDC6;
+        font-weight: 200;
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 10px;
+        margin-left: -100%;
+        text-align: center;
+      }
+
+      div{
+
+        display: flex;
+        margin-top: -13px;
+        span{
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          background-color: #B3C3EE;
+          display: block;
+          margin-left: -4px;
+        }
+
+        //position: absolute;
+        //top: -11px;
+        //left: -1px;
+      }
+      margin-top: 16px;
+    }
+    .activeDot{
+      background-color: $color-newBlue !important;
+    }
+
+    .dot:nth-last-child(1){
+      div{
+        justify-content: right;
+        span{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-right: -2px;
+          span{
+            background-color: $color-white;
+            width: 50%;
+            margin-left: 2px;
+          }
+        }
+      }
+      h1{
+        text-align: right;
+        margin-right: -30px;
+      }
+    }
+    .dot:nth-child(1){
+      div{
+        justify-content: left;
+        padding-right: 250px;
+
+        span{
+          margin-left: -5px;
+        }
+      }
+      h1{
+        text-align: left;
+
+      }
+    }
+  }
+  //
+  //.progressMain{
+  //  display: flex;
+  //  justify-content: space-between;
+  //
+  //  margin: 30px 20px 60px 20px;
+  //  width: 95%;
+  //  .dot{
+  //    position: relative;
+  //    height: 8px;
+  //    width: 100%;
+  //    background-color: #BABDC6;
+  //    &:nth-child(2),  &:nth-child(3),   {
+  //      padding-right: 150px;
+  //    }
+  //    h1{
+  //      color: #BABDC6;
+  //      font-weight: 200;
+  //      font-size: 14px;
+  //      margin-top: 0px;
+  //      margin-left: -55%;
+  //    }
+  //
+  //    div{
+  //
+  //      display: flex;
+  //      margin-top: -13px;
+  //      span{
+  //        width: 30px;
+  //        height: 30px;
+  //        border-radius: 50%;
+  //        background-color: #B3C3EE;
+  //        display: block;
+  //        margin-left: -4px;
+  //      }
+  //
+  //      //position: absolute;
+  //      //top: -11px;
+  //      //left: -1px;
+  //    }
+  //    margin-top: 16px;
+  //  }
+  //  .activeDot{
+  //    background-color: $color-newBlue !important;
+  //  }
+  //
+  //  .dot:nth-last-child(1){
+  //    div{
+  //      justify-content: right;
+  //      span{
+  //        display: flex;
+  //        justify-content: center;
+  //        align-items: center;
+  //        span{
+  //          background-color: $color-white;
+  //          width: 50%;
+  //          margin-left: 2px;
+  //        }
+  //      }
+  //    }
+  //    h1{
+  //      text-align: right;
+  //      margin-right: -30px;
+  //    }
+  //  }
+  //  .dot:nth-child(1){
+  //    div{
+  //      justify-content: left;
+  //      padding-right: 250px;
+  //
+  //      span{
+  //        margin-left: -5px;
+  //      }
+  //    }
+  //    h1{
+  //      text-align: left;
+  //
+  //    }
+  //  }
+  //}
+}
+
+.accessToPersonalCabinet{
+  .persons{
+    display: flex;
+    div{
+      background: $color-white;
+      box-shadow: 0px 0px 20px rgba(17, 24, 39, 0.05);
+      backdrop-filter: blur(40px);
+      border-radius: 16px;
+      text-align: center;
+      padding: 50px 0;
+      img{
+        width: 78px;
+      }
+      h2{
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 33px;
+        color: #000000;
+        margin-top: 10px;
+        margin-bottom: 30px;
+      }
+      button{
+        background: $color-newBlue;
+        box-shadow: 0px 20px 20px rgba(50, 94, 205, 0.22);
+        border-radius: 60px;
+        padding: 12px 61px;
+        color: $color-white;
+      }
+    }
+  }
+}
+
+.leaseAgreements{
+  margin-bottom: 140px;
+  .leaseAgreementsContent{
+    background-color: $color-white;
+    box-shadow: 0px 0px 20px rgba(17, 24, 39, 0.05);
+    backdrop-filter: blur(40px);
+    border-radius: 16px;
+    padding-top: 51px;
+    padding-bottom: 61px;
+    display: flex;
+    justify-content: center;
+    .viewPdf {
+      width: 640px;
+      .btnUpload2{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 21px;
+          button{
+            padding: 8px 20px;
+            font-weight: bold;
+            &:nth-child(2){
+              border: 1px solid #B6BCCD;
+              border-radius: 8px;
+              background-color: transparent;
+              color: $color-newBlue;
+              margin-left: 10px;
+              span{
+                background-color: $color-newBlue;
+                margin-right: 12px;
+              }
+            }
+            &:nth-child(3){
+              border: 1px solid #B6BCCD;
+              border-radius: 8px;
+              color: $color-white;
+              background-color: $color-newBlue;
+              margin-left: 30px;
+              span{
+                background-color: $color-white;
+                margin-right: 12px;
+              }
+            }
+          }
+      }
+      .pdfHeader {
+        .header {
+          display: flex;
+          justify-content: space-between;
+          padding: 12px 20px;
+          background: #EBEDF1;
+          border-bottom: 1px solid #F6F6F7;
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.08);
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+
+          p{
+            margin: 0;
+            display: flex;
+            div{
+              background: #B6BCCD;
+              border-radius: 50%;
+              width: 16px;
+              height: 16px;
+              margin-right: 10px;
+            }
+            button{
+              margin-left: 30px;
+              width: 18px;
+              height: 18px;
+              padding: 0;
+              span{
+                width: 100%;
+                background-color: #777B82;
+              }
+            }
+          }
+        }
+        .btnUpload{
+          display: flex;
+          margin-top: 50px;
+          justify-content: center;
+          button{
+            margin-right: 30px;
+            border-radius: 60px;
+            padding: 15px 52px;
+            color: $color-white;
+            background-color: $color-newBlue;
+            span{
+              margin-right: 12px;
+              background-color: $color-white;
+            }
+          }
+        }
+      }
+    }
+    .fileHistory{
+      padding-left: 100px;
+      h2{
+        font-weight: 700;
+        font-size: 28px;
+        line-: 33px;
+        color: $color-newBlack;
+        margin: 0;
+        text-align: center;
+      }
+      p{
+        margin-top: 30px;
+        margin-bottom: 10px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 130%;
+
+      }
+      img{
+        margin-top: 30px;
+      }
+      div{
+        display: flex;
+        div{
+          width: 16px;
+          height: 16px;
+          border-radius: 50%;
+          margin-right: 10px;
+        }
+        .gray{
+          background-color: #B6BCCD;
+          width: 16px;
+          height: 16px;
+          border-radius: 50%;
+          margin-right: 10px;
+        }
+        .green{
+          background-color: $color-newGreen;
+        }
+        .white{
+          background-color: #EBEDF1;
+        }
+        .red{
+          background-color: $color-red;
+        }
+      }
+    }
+
+    .btnGroup{
+      position: absolute;
+      right: 30px;
+      display: flex;
+      bottom: -25px;
+      .paidBtn{
+        display: flex;
+        align-items: center;
+        padding: 14px 40px;
+        background-color: $color-newGreen;
+        color: $color-white;
+        box-shadow: 0px 20px 20px rgba(140, 193, 82, 0.22);
+        border-radius: 60px;
+
+        font-size: 18px;
+        line-height: 130%;
+        span{
+          background-color: $color-white;
+          margin-right: 10px;
+        }
+      }
+      .backBtn{
+        display: flex;
+        align-items: center;
+        padding: 14px 40px;
+        background-color: $color-newRed;
+        color: $color-white;
+        //box-shadow: 0px 20px 20px rgba(140, 193, 82, 0.22);
+        box-shadow: 0px 20px 20px rgba(233, 87, 63, 0.22);
+        border-radius: 60px;
+        line-height: 130%;
+        margin-right: 30px;
+        span{
+          background-color: $color-white;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+
+
+.registrationOfTheLeaseAgreement{
+  .mainTabel{
+
+    .links{
+      width: 360px;
+      margin-right: 20px;
+      margin-bottom: 0;
+      padding: 30px 40px 30px 30px;
+      flex-shrink: 0;
+      h4{
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 130%;
+        margin-top: 0;
+        margin-bottom: 16px;
+      }
+      .h4{
+        margin-top: 20px;
+      }
+        a{
+          &:hover{
+            background-color: $color-newBlue;
+            color: $color-white;
+          }
+          padding: 10px 20px;
+          font-weight: 400;
+          font-size: 16px;
+          margin-top: 10px;
+          border-radius: 8px;
+          line-height: 150%;
+          color: $color-newBlack;
+          width: 100%;
+          display: block;
+          position: relative;
+          span{
+            background: #F6F6F7;
+            border-radius: 50% ;
+            width: 21px;
+            height: 21px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 150%;
+            position: absolute;
+            right: 20px;
+            top: 12px;
+            color: $color-newBlack;
+          }
+        }
+    }
+    .tables{
+      padding: 30px;
+      width: 100%;
+      .tablesHeader{
+        display: flex;
+        padding-left: 15px;
+        .searchBtn{
+          height: 50px;
+          width: 50px;
+          background-color: $color-newBlue;
+          border-radius: 8px;
+          margin-top: auto;
+          flex-shrink: 0;
+          span{
+            background-color: $color-white;
+          }
+        }
+      }
+      .fil{
+        display: flex;
+        margin-top: 30px;
+        align-items: center;
+        p{
+          margin-right: 10px;
+        }
+      }
+      .tableList{
+        table{
+          border: 1px solid #DDEAFF;
+          border-collapse: collapse;
+          border-radius: 8px;
+          margin-top: 30px;
+          box-sizing: border-box;
+          width: 100%;
+          tr{
+            //border: 1px solid #DDEAFF;
+            border-collapse: collapse;
+            width: 100%;
+
+            th{
+              text-align: left;
+              border-collapse: collapse;
+              padding: 10px 16px;
+              font-size: 16px;
+              line-height: 150%;
+              font-weight: 700;
+            }
+            td{
+              font-weight: 300;
+              text-align: left;
+              //border: 1px solid #DDEAFF;
+              border-collapse: collapse;
+              padding: 24px 16px;
+              font-size: 16px;
+              line-height: 150%;
+              white-space: nowrap;
+              .time{
+                color: $color-newBlue;
+              }
+              .sends{
+                padding: 5px 8px;
+                border-radius: 8px;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 150%;
+                display: inline-block;
+
+                &.sendsSent{
+                  background-color: rgba(50, 94, 205, 0.22);
+                  color: $color-newBlue;
+                }
+                &.sendsApproved{
+                  background-color: #E5F9CF;
+                  color: #5F8B2E;
+                }
+              }
+              .icon{
+                width: 22px;
+                height: 22px;
+                cursor: pointer;
+                background-color: $color-newBlue;
+              }
+              .cancelBtn{
+                color: $color-newRed;
+                border: 1px solid $color-newRed;
+                background: rgba(233, 87, 63, 0.22);
+                border-radius: 8px;
+                width: 100px;
+                padding: 6px 10px;
+              }
+              .viewBtn{
+                background-color: transparent;
+                text-decoration: underline;
+                color: $color-newBlue;
+                width: 90px;
+                padding: 0;
+                span{
+                  background-color: $color-newBlue;
+                  margin-left: 10px;
+                  height: 16px;
+                }
+              }
+            }
+
+          }
+          tr:nth-child(odd) {
+            background-color: #f2f2f2;
+          }
+          .noFile{
+            th{
+              text-align: center;
+              h1{
+                color: #B6BCCD;
+                font-weight: 700;
+                font-size: 28px;
+                line-height: 33px;
+                text-align: center;
+                margin-bottom: 50px;
+                margin-top: 50px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+.mainModal{
+  position: fixed;
+  top: 100px;
+  width: 600px;
+  left: calc(50% - 400px);
+  background-color: $color-white;
+  border-radius: 8px;
+  box-shadow:  0px 0px 50px -10px #000;
+  .bird{
+    padding: 80px 150px;
+    img{
+      margin: 0 auto;
+    }
+    h2{
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 33px;
+      color: $color-newBlack;
+    }
+  }
+  .closeBtn{
+    display: block;
+    margin-left: auto;
+    margin-right: 24.5px;
+    background-color: transparent;
+    margin-top: 24.5px;
+
+    span{
+      background: #777B82;
+    }
+  }
+  h2{
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: $color-newBlack;
+
+  }
+  p{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 150%;
+    margin-bottom: 6px;
+    margin-left: 110px;
+  }
+  textarea{
+    margin-left: 100px;
+    margin-right: 100px;
+    width: 400px;
+    background: #F6F6F7;
+    border-radius: 8px;
+    height: 90px;
+    padding: 10px;
+    border: none;
+    &:focus{
+      outline: none;
+    }
+  }
+  div{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    button{
+      padding-top: 5px;
+      &:nth-child(1){
+        background: #E9573F;
+        box-shadow: 0px 20px 20px rgba(233, 87, 63, 0.22);
+        margin-right: 30px;
+      }
+      &:nth-child(2){
+        background: #325ECD;
+        box-shadow: 0px 20px 20px rgba(50, 94, 205, 0.22);
+      }
+      width: 114px;
+      height: 43px;
+      box-shadow: 0px 20px 20px rgba(50, 94, 205, 0.22);
+      border-radius: 60px;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 130%;
+      color: $color-white;
+    }
+  }
+
+}
+
+
+.registrationOfStudentRentalAgreement{
+  .progressMain{
+    display: flex;
+    justify-content: space-between;
+
+    margin: 30px 20px 60px 20px;
+    width: 95%;
+    .dot{
+      position: relative;
+      height: 8px;
+      width: 100%;
+      background-color: #BABDC6;
+      &:nth-child(2),  &:nth-child(3),  &:nth-child(4), {
+        //padding-right: 10%;
+      }
+      h1{
+        color: #BABDC6;
+        font-weight: 200;
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 10px;
+        margin-left: -100%;
+        text-align: center;
+      }
+
+      div{
+
+        display: flex;
+        margin-top: -13px;
+        span{
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          background-color: #B3C3EE;
+          display: block;
+          margin-left: -4px;
+        }
+
+        //position: absolute;
+        //top: -11px;
+        //left: -1px;
+      }
+      margin-top: 16px;
+    }
+    .activeDot{
+      background-color: $color-newBlue !important;
+    }
+
+    .dot:nth-last-child(1){
+      div{
+        justify-content: right;
+        span{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-right: -2px;
+          span{
+            background-color: $color-white;
+            width: 50%;
+            margin-left: 2px;
+          }
+        }
+      }
+      h1{
+        text-align: right;
+        margin-right: -30px;
+      }
+    }
+    .dot:nth-child(1){
+      div{
+        justify-content: left;
+        padding-right: 250px;
+
+        span{
+          margin-left: -5px;
+        }
+      }
+      h1{
+        text-align: left;
+
+      }
+    }
+  }
+  .stTwoPart{
+    display: flex;
+    div{
+      h2{
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 33px;
+        color: $color-newBlue;
+        margin: 0;
+      }
+    }
+    .leftPart{
+      background: $color-white;
+      box-shadow: 0px 0px 20px rgba(17, 24, 39, 0.05);
+      backdrop-filter: blur(40px);
+      border-radius: 16px;
+      padding: 30px;
+      padding-bottom: 50px;
+      width: 100%;
+      margin-right: 20px;
+      position: relative;
+      z-index: 999;
+    }
+    .rightPart{
+      background: $color-white;
+      box-shadow: 0px 0px 20px rgba(17, 24, 39, 0.05);
+      backdrop-filter: blur(40px);
+      border-radius: 16px;
+      padding: 30px;
+      width: 100%;
+      position: relative;
+      padding-bottom: 50px;
+      .addBtn{
+        padding: 16px 40px;
+        position: absolute;
+        right: 30px;
+        background-color: $color-newBlue;
+        box-shadow: 0px 20px 20px rgba(21, 37, 126, 0.22);
+        border-radius: 60px;
+        color: $color-white;
+        bottom: -25px;
+        span{
+          background-color: $color-white;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
+
+
+.amendmentOfTheLeaseAgreement{
+  margin-bottom: 80px;
+  .amendmentOfTheLeaseAgreementContent{
+    background-color: $color-white;
+    padding: 20px 30px 80px 30px;
+    position: relative;
+    .btnGroup{
+      position: absolute;
+      right: 30px;
+      display: flex;
+      bottom: -25px;
+      .paidBtn{
+        display: flex;
+        align-items: center;
+        padding: 14px 40px;
+        background-color: $color-newGreen;
+        color: $color-white;
+        box-shadow: 0px 20px 20px rgba(140, 193, 82, 0.22);
+        border-radius: 60px;
+
+        font-size: 18px;
+        line-height: 130%;
+        span{
+          background-color: $color-white;
+          margin-right: 10px;
+        }
+      }
+      .backBtn{
+        display: flex;
+        align-items: center;
+        padding: 14px 40px;
+        background-color: $color-newRed;
+        color: $color-white;
+        //box-shadow: 0px 20px 20px rgba(140, 193, 82, 0.22);
+        box-shadow: 0px 20px 20px rgba(233, 87, 63, 0.22);
+        border-radius: 60px;
+        line-height: 130%;
+        margin-right: 30px;
+        span{
+          background-color: $color-white;
+          margin-right: 10px;
+        }
+      }
+    }
+    h2{
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 23px;
+      color: $color-newBlack;
+      margin-top: 30px;
+      margin-bottom: 0px;
+      text-align: center;
+    }
+    .kvm1{
+      background: #DDEAFF;
+      width: 100%;
+    }
+    .kvm2{
+      background: #E5F9CF;
+      width: 100%;
+    }
+
+    .residentialAddress3{
+      display: flex;
+      margin-top: 30px;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      input{
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+      }
+      h2{
+        margin: 0;
+        margin-top: 2px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+      }
+    }
+    .forComment{
+      margin-top: 30px;
+      label{
+        display: block;
+      }
+      textarea{
+        width: 100%;
+        height: 200px;
+        background: #F6F6F7;
+        border-radius: 8px;
+        border: none;
+        margin-top: 10px;
+        padding: 20px;
+        &:focus{
+          outline: none;
+        }
+      }
+    }
+  }
+}
+
+
+.registrationOfStudentRentalAgreement2{
+  margin-bottom: 30px;
+  .closeBtnTwo{
+    background-color: transparent;
+    span{
+      background-color: $color-red;
+    }
+  }
+  .progressMain{
+    display: flex;
+    justify-content: space-between;
+
+    margin: 30px 20px 60px 20px;
+    width: 95%;
+    .dot{
+      position: relative;
+      height: 8px;
+      width: 100%;
+      background-color: #BABDC6;
+      &:nth-child(2),  &:nth-child(3),  &:nth-child(4), {
+        //padding-right: 10%;
+      }
+      h1{
+        color: #BABDC6;
+        font-weight: 200;
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 10px;
+        margin-left: -100%;
+        text-align: center;
+      }
+
+      div{
+
+        display: flex;
+        margin-top: -13px;
+        span{
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          background-color: #B3C3EE;
+          display: block;
+          margin-left: -4px;
+        }
+
+        //position: absolute;
+        //top: -11px;
+        //left: -1px;
+      }
+      margin-top: 16px;
+    }
+    .activeDot{
+      background-color: $color-newBlue !important;
+    }
+
+    .dot:nth-last-child(1){
+      div{
+        justify-content: right;
+        span{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-right: -2px;
+          span{
+            background-color: $color-white;
+            width: 50%;
+            margin-left: 2px;
+          }
+        }
+      }
+      h1{
+        text-align: right;
+        margin-right: -30px;
+      }
+    }
+    .dot:nth-child(1){
+      div{
+        justify-content: left;
+        padding-right: 250px;
+
+        span{
+          margin-left: -5px;
+        }
+      }
+      h1{
+        text-align: left;
+
+      }
+    }
+  }
+  .registrationOfStudentRentalAgreement2Part{
+    display: flex;
+    h2{
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 33px;
+      color: $color-newBlue;
+    }
+    .leftPart{
+      width: 100%;
+      background: $color-white;
+      box-shadow: 0px 0px 20px rgba(17, 24, 39, 0.05);
+      backdrop-filter: blur(40px);
+      border-radius: 16px;
+      margin-right: 20px;
+      padding: 30px 30px 55px 30px;
+      .kvm2{
+        background: #E5F9CF;
+        width: 100%;
+      }
+    }
+    .rightPart{
+      width: 100%;
+      background: $color-white;
+      box-shadow: 0px 0px 20px rgba(17, 24, 39, 0.05);
+      backdrop-filter: blur(40px);
+      border-radius: 16px;
+      padding: 30px 30px 55px 30px;
+      position: relative;
+      .disBtn{
+        background: $color-newBlue;
+        box-shadow: 0px 20px 20px rgba(21, 37, 126, 0.22);
+        border-radius: 60px;
+        color: $color-white;
+        font-weight: 700;
+        font-size: 18px;
+        padding-top: 11px;
+        display: block;
+        padding-bottom: 11px;
+        line-height: 130%;
+        margin-top: 30px;
+        width: 100%;
+      }
+      .additionBtn{
+        background: #325ECD;
+        box-shadow: 0px 20px 20px rgba(21, 37, 126, 0.22);
+        border-radius: 60px;
+        padding: 16px 60px;
+        color: $color-white;
+        font-weight: 700;
+        font-size: 19px;
+        line-height: 26px;
+        position: absolute;
+        bottom: -25px;
+        right: 30px;
+        span{
+          background-color: $color-white;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}

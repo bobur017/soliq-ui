@@ -1,0 +1,194 @@
+/**
+ * Created by Watson on 04.05.2022.
+ */
+@import "../../../styles/colors";
+
+.physicalPerson {
+  h1 {
+    font-size: 28px;
+    line-height: 33px;
+    color: #282F38;
+  }
+
+  .forms {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(17, 24, 39, 0.05);
+    backdrop-filter: blur(40px);
+    border-radius: 16px;
+    padding:20px 30px 50px 30px;
+
+    input {
+      padding-left: 20px;
+      height: 50px;
+    }
+
+    .loupe {
+      border-radius: 8px 0px 0px 8px;
+      display: inline-block;
+    }
+
+    button {
+      background: #325ECD;
+      border-radius: 0px 8px 8px 0px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+
+      span {
+        background-color: white;
+      }
+    }
+  }
+
+  .path {
+    margin: 20px 0 20px 0;
+
+    img {
+      margin: 0 20px;
+    }
+
+    span {
+      color: #B6BCCD;
+    }
+  }
+
+
+  /* h1{
+     margin-bottom: 45px;
+   }
+   .inputMarginBottom{
+     margin-bottom: 35px;
+   }*/
+}
+
+.physicalPersonDebtInfo {
+  margin-top: 50px;
+
+  .forms {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(17, 24, 39, 0.05);
+    backdrop-filter: blur(40px);
+    border-radius: 16px;
+    padding:20px 30px 50px 30px;
+
+    input {
+      background: #F6F6F7;
+      padding-left: 20px;
+      height: 50px;
+    }
+
+    input:first-child {
+      border-radius: 8px;
+      display: inline-block;
+    }
+
+    .plus {
+      width: 50px;
+      height: 50px;
+      background: #325ECD;
+      border-radius: 8px;
+      margin-left: 20px;
+
+      span {
+        background-color: white;
+      }
+    }
+  }
+
+  .createShape {
+    background: #8CC152;
+    box-shadow: 0px 20px 20px rgba(140, 193, 82, 0.22);
+    border-radius: 60px;
+    width: 257px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 18px;
+    color: white;
+    line-height: 130%;
+    transform: translateY(75px);
+  }
+
+
+  /*  background: rgba(255, 255, 255, 0.2);
+    border: 1px solid $color-white;
+    box-shadow: 0px 0px 20px rgba(17, 24, 39, 0.05);
+    backdrop-filter: blur(40px);
+    margin-top: 50px;
+    padding: 30px 30px 36px;
+
+    .address {
+      //padding: 0;
+    }
+
+    .innpinfl {
+      width: 55%;
+    }
+
+    .provideInformation {
+      margin-top: 35px;
+    }
+
+    .shaping {
+      background: $color-blue;
+      display: inline-block;
+      box-shadow: 0px 10px 20px -10px rgba(30, 45, 86, 0.2);
+      border-radius: 5px;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 23px;
+      padding: 19px 96.5px;
+      color: $color-white;
+      margin-top: 30px;
+    }*/
+}
+
+
+.PhysicalPersonDebtInfoNew{
+  margin-top: 30px;
+  position: relative;
+  background-color: #FFF;
+  box-shadow: 0px 0px 20px rgba(17, 24, 39, 0.05);
+  backdrop-filter: blur(40px);
+  border-radius: 16px;
+  padding: 20px 30px 50px 30px;
+  margin-bottom: 50px;
+  .manualUpBox{
+
+  }
+  .inputs{
+    display: flex;
+    .deleteBtn{
+      margin-top: auto;
+      button{
+        display: inline-block;
+        background-color: $color-newRed;
+        width: 50px;
+        height: 50px;
+        border-radius: 8px;
+
+        span{
+          background-color: #fff;
+        }
+      }
+    }
+  }
+  .payment{
+    background: #8CC152;
+    box-shadow: 0px 20px 20px rgba(140, 193, 82, 0.22);
+    border-radius: 60px;
+    position: absolute;
+    right: 30px;
+    bottom: -25px;
+    padding: 14.5px 40px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 18px;
+    color: white;
+    span{
+      background-color: white;
+      margin-right: 10px;
+    }
+  }
+}

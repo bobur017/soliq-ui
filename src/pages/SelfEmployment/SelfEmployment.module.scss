@@ -1,0 +1,570 @@
+@import "../../styles/colors";
+
+.SelfEmployment {
+  .path {
+    margin: 20px 0 20px 0;
+
+    img {
+      margin: 0 20px;
+    }
+
+    span {
+      color: #B6BCCD;
+    }
+  }
+}
+
+.SelfEmploymentForms {
+  position: relative;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 20px rgba(17, 24, 39, 0.05);
+  backdrop-filter: blur(40px);
+  border-radius: 16px;
+  z-index: 3;
+  padding: 30px 30px 50px 30px;
+
+  h3 {
+    margin: 0;
+    font-size: 28px;
+    line-height: 33px;
+    color: $color-newBlack;
+  }
+
+  .searchBtn {
+    display: flex;
+
+    input {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    button {
+      width: 50px;
+      height: 50px;
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
+      background-color: $color-newBlue;
+
+      span {
+        background-color: #fff;
+      }
+    }
+  }
+  .upBox{
+
+    .btnGroup{
+      position: absolute;
+      right: 30px;
+      display: flex;
+      bottom: -25px;
+
+      .uploaded{
+        font-weight: 600;
+        font-size: 18px;
+        color: $color-newGreen;
+        background: #E5F9CF;
+        box-shadow: 0px 20px 20px rgba(140, 193, 82, 0.22);
+        border-radius: 60px;
+        margin-right: 20px;
+        padding: 12px 40px;
+        margin-top: 4px;
+        span{
+          background-color: $color-newGreen;
+          margin-right: 10px;
+
+        }
+      }
+      .paidBtn{
+        display: flex;
+        align-items: center;
+        padding: 12px 40px;
+        background-color: $color-newGreen;
+        color: $color-white;
+        box-shadow: 0px 20px 20px rgba(140, 193, 82, 0.22);
+        border-radius: 60px;
+
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 130%;
+        span{
+          background-color: $color-white;
+          margin-right: 10px;
+          width: 19px;
+          height: 19px;
+        }
+      }
+      .closeBtn{
+        display: flex;
+        align-items: center;
+        padding: 14px 40px;
+        background-color: $color-newRed;
+        color: $color-white;
+        box-shadow: 0px 10px 20px rgba(233, 87, 63, 0.22);
+        border-radius: 60px;
+
+        font-size: 18px;
+        line-height: 130%;
+        span{
+          background-color: $color-white;
+          margin-right: 10px;
+        }
+      }
+      .notBtn{
+        display: flex;
+        align-items: center;
+        padding: 14px 40px;
+        background: #C19E7A;
+        box-shadow: 0px 20px 20px rgba(193, 158, 122, 0.22);
+        color: $color-white;
+        border-radius: 60px;
+
+        font-size: 18px;
+        line-height: 130%;
+        span{
+          background-color: $color-white;
+          margin-right: 10px;
+        }
+      }
+      .uploadUpBtn{
+        display: flex;
+        align-items: center;
+        padding: 14px 40px;
+        background: $color-newBlue;
+        box-shadow: 0px 20px 20px rgba(21, 37, 126, 0.22);
+        color: $color-white;
+        border-radius: 60px;
+
+        font-size: 18px;
+        line-height: 130%;
+        span{
+          background-color: $color-white;
+          margin-right: 10px;
+          margin-left: 10px;
+        }
+      }
+    }
+
+  }
+}
+
+.SelfEmploymentFormsSms {
+  margin-top: 30px;
+  position: relative;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 20px rgba(17, 24, 39, 0.05);
+  backdrop-filter: blur(40px);
+  border-radius: 16px;
+  z-index: 1;
+  padding: 30px 30px 50px 30px;
+
+  h3 {
+    margin: 0;
+    font-size: 28px;
+    line-height: 33px;
+    color: $color-newBlack;
+  }
+
+  .smsBtn {
+    display: flex;
+
+    input {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    button {
+      //width: 50px;
+      //height: 50px;
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
+      background-color: $color-newBlue;
+      color: white;
+      font-size: 15px;
+      //span {
+      //  background-color: #fff;
+      //}
+    }
+  }
+  .upBox{
+
+    .btnGroup{
+      position: absolute;
+      right: 30px;
+      display: flex;
+      bottom: -25px;
+
+      .uploaded{
+        font-weight: 600;
+        font-size: 18px;
+        color: $color-newGreen;
+        background: #E5F9CF;
+        box-shadow: 0px 20px 20px rgba(140, 193, 82, 0.22);
+        border-radius: 60px;
+        margin-right: 20px;
+        padding: 12px 40px;
+        margin-top: 4px;
+        span{
+          background-color: $color-newGreen;
+          margin-right: 10px;
+
+        }
+      }
+      .paidBtn{
+        display: flex;
+        align-items: center;
+        padding: 12px 40px;
+        background-color: $color-newGreen;
+        color: $color-white;
+        box-shadow: 0px 20px 20px rgba(140, 193, 82, 0.22);
+        border-radius: 60px;
+
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 130%;
+        span{
+          background-color: $color-white;
+          margin-right: 10px;
+          width: 19px;
+          height: 19px;
+        }
+      }
+      .closeBtn{
+        display: flex;
+        align-items: center;
+        padding: 14px 40px;
+        background-color: $color-newRed;
+        color: $color-white;
+        box-shadow: 0px 10px 20px rgba(233, 87, 63, 0.22);
+        border-radius: 60px;
+
+        font-size: 18px;
+        line-height: 130%;
+        span{
+          background-color: $color-white;
+          margin-right: 10px;
+        }
+      }
+      .notBtn{
+        display: flex;
+        align-items: center;
+        padding: 14px 40px;
+        background: #C19E7A;
+        box-shadow: 0px 20px 20px rgba(193, 158, 122, 0.22);
+        color: $color-white;
+        border-radius: 60px;
+
+        font-size: 18px;
+        line-height: 130%;
+        span{
+          background-color: $color-white;
+          margin-right: 10px;
+        }
+      }
+      .uploadUpBtn{
+        display: flex;
+        align-items: center;
+        padding: 14px 40px;
+        background: $color-newBlue;
+        box-shadow: 0px 20px 20px rgba(21, 37, 126, 0.22);
+        color: $color-white;
+        border-radius: 60px;
+
+        font-size: 18px;
+        line-height: 130%;
+        span{
+          background-color: $color-white;
+          margin-right: 10px;
+          margin-left: 10px;
+        }
+      }
+    }
+
+  }
+}
+
+.SelfEmploymentRegion {
+  position: relative;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 20px rgba(17, 24, 39, 0.05);
+  backdrop-filter: blur(40px);
+  border-radius: 16px;
+  z-index: 2;
+  padding: 20px 30px 50px;
+  margin-top: 30px;
+
+  h3 {
+    margin: 0;
+    font-size: 28px;
+    line-height: 33px;
+    color: $color-newBlack;
+  }
+}
+
+
+.YurTaxView {
+  background: #FFFFFF;
+  box-shadow: 0px 0px 20px rgba(17, 24, 39, 0.05);
+  backdrop-filter: blur(40px);
+  border-radius: 16px;
+  margin-top: 30px;
+  padding-top: 40px;
+  padding-bottom: 100px;
+  margin-bottom: 50px;
+
+  .pdfDownload{
+    border: 1px solid #B6BCCD;
+    border-radius: 8px;
+    height: 38px;
+  }
+  .uploadBtn{
+    padding: 8px 20px;
+    border: 1px solid #B6BCCD;
+    border-radius: 8px;
+    background-color: transparent;
+    display:  block;
+    //margin: 20px auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 130%;
+    span{
+      background-color: $color-newBlue;
+      margin-right: 10px;
+    }
+    color: $color-newBlue;
+  }
+  .printBtn{
+    background-color: $color-newBlue;
+    padding: 8px 20px;
+    color: #fff;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 130%;
+    span{
+      background-color: #fff;
+      margin-right: 12px;
+    }
+  }
+  .mainPdfReader{
+    text-align: center;
+  }
+  .mainCard {
+    margin-top: 20px;
+    padding: 15px 30px;
+    background: #FFFFFF;
+    box-shadow: 0 0 20px rgba(17, 24, 39, 0.05);
+    backdrop-filter: blur(40px);
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    div{
+      h1 {
+        font-size: 28px;
+        line-height: 33px;
+        font-weight: bold;
+        margin: 0;
+        margin-bottom: 10px;
+        color: $color-newBlack;
+      }
+      span{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: $color-newBlack;
+      }
+    }
+    button {
+      padding-left: 30px;
+      padding-right: 30px;
+      height: 50px;
+      background: #325ECD;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 18px;
+      color: white;
+
+      span {
+        background-color: white;
+        margin-right: 10px;
+        margin-top: -2px;
+      }
+    }
+
+  }
+  .decTabel{
+    margin-top: 50px;
+    background: $color-white;
+    box-shadow: 0px 0px 20px rgba(17, 24, 39, 0.05);
+    backdrop-filter: blur(40px);
+    border-radius: 16px;
+    padding: 30px;
+    .mainTable{
+      margin-top: 20px;
+      table{
+        width: 100%;
+        border-spacing: 0;
+        tr{
+          &:nth-child(1){
+            background: #F6F6F7;
+            overflow: hidden;
+          }
+          &:nth-child(odd){
+            background: #F6F6F7;
+          }
+          &:nth-last-child(1){
+            border-bottom: 1px solid #DDEAFF;
+            td{
+              border-bottom: 1px solid #DDEAFF;
+
+              &:nth-last-child(1){
+                border-bottom-right-radius: 8px;
+              }
+              &:nth-child(1){
+                border-bottom-left-radius: 8px;
+              }
+            }
+          }
+          th{
+            border-top: 1px solid #DDEAFF;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            text-align: left;
+            padding: 28px 16px;
+            &:nth-child(1){
+              border-top: 1px solid #DDEAFF;
+              border-top-left-radius: 8px;
+              overflow: hidden;
+              border-left: 1px solid #DDEAFF;
+              padding-left: 26px;
+            }
+            &:nth-child(2){
+              padding-left: 10px;
+            }
+            &:nth-last-child(1){
+              padding-left: 10px;
+              border-top-right-radius: 8px;
+              border-right: 1px solid #DDEAFF;
+
+            }
+          }
+
+
+
+
+          td{
+            padding: 28px 16px;
+            text-align: left;
+            &:nth-child(1){
+              border-left: 1px solid #DDEAFF;
+              padding-left: 26px;
+              padding-right: 26px;
+            }
+            &:nth-child(2){
+              padding-left: 16px;
+              padding-right: 16px;
+
+            }
+            &:nth-last-child(1){
+              border-right: 1px solid #DDEAFF;
+              position: relative;
+              button{
+                background-color: transparent;
+                span{
+                  background: #777B82;
+                }
+              }
+              .control{
+                display: none;
+                width: 250px;
+                background: $color-white;
+                box-shadow: 2px 20px 20px rgba(135, 138, 146, 0.16);
+                border-radius: 8px;
+                position: absolute;
+                left: -215px;
+                top: 60px;
+                z-index: 999;
+                overflow: hidden;
+                button{
+                  width: 100%;
+                  padding-top: 15px;
+                  font-size: 18px;
+                  padding-left: 18px;
+                  line-height: 20px;
+                  padding-bottom: 15px;
+                  display: flex;
+                  align-items: center;
+                  font-weight: 400;
+                  justify-content: left;
+                  &:hover{
+                    background-color: $color-newBlue;
+                    color: $color-white;
+                    span{
+                      background-color: $color-white;
+                    }
+                  }
+                  span{
+                    background-color: $color-newBlack;
+                    margin-right: 12px;
+                    width: 16px;
+
+                  }
+                }
+              }
+            }
+
+          }
+        }
+      }
+    }
+
+  }
+}
+
+.SelfEmploymentSearch{
+  .inputs{
+    width: 385px;
+    position: relative;
+
+    input{
+      margin-top: 10px;
+    }
+    .footerBtn{
+      position: absolute;
+      display: flex;
+      justify-content: space-between;
+      bottom: -74px;
+      width: 100%;
+      button{
+        color: #fff;
+        padding: 12px 51.5px;
+        display: flex;
+        align-items: center;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 130%;
+        width: 100%;
+        border-radius: 60px;
+        margin-left: -7px;
+        span{
+          background-color: #fff;
+          margin-right: 10px;
+        }
+        &.back{
+          background-color: $color-newRed;
+          box-shadow: 0px 20px 20px rgba(233, 87, 63, 0.22);
+          margin-right: 20px;
+        }
+        &.save{
+          background-color: $color-newBlue;
+          box-shadow: 0px 20px 20px rgba(50, 94, 205, 0.22);
+        }
+      }
+    }
+  }
+}

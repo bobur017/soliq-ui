@@ -1,0 +1,427 @@
+/**
+ * Created by Watson on 08.05.2022.
+ */
+@import "../../styles/colors";
+
+%allCard {
+  background: #FFFFFF;
+  box-shadow: 0px 0px 20px rgba(17, 24, 39, 0.05);
+  backdrop-filter: blur(40px);
+  border-radius: 16px;
+  padding: 20px 30px 50px 30px;
+}
+
+%allTitle {
+  color: #282F38;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.CreateElektronicContract {
+  .path {
+    color: #B6BCCD;
+
+    img {
+      margin: 0 20px;
+    }
+  }
+
+  .HistoryContract {
+    padding: 15px 30px 30px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(17, 24, 39, 0.05);
+    backdrop-filter: blur(40px);
+    margin-top: 20px;
+    border-radius: 16px;
+
+    .header {
+      h1 {
+        margin: 0 0 30px 0;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 33px;
+      }
+
+      button {
+        &:nth-child(2){
+          background-color: $color-newBlack;
+          margin-left:20px;
+          width: 50px;
+          height: 50px;
+
+        }
+        border-radius: 8px;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        span {
+          background-color: white;
+        }
+      }
+    }
+
+
+
+
+    .body {
+      label {
+        display: flex;
+        margin-bottom: 10px;
+        color: #282F38;
+        font-size: 16px;
+
+      }
+
+      //input {
+      //  background: #F6F6F7;
+      //  border-radius: 8px;
+      //  margin-bottom: 10px;
+      //  border: none;
+      //  height: 50px;
+      //  width: 100%;
+      //  padding: 0px 20px;
+      //  font-size: 14px;
+      //  line-height: 150%;
+      //  color: $color-newBlack;
+      //}
+
+      .formGroup {
+        width: 40%;
+        margin-right: 30px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        &:first-child {
+          width: 20%;
+        }
+      }
+    }
+
+    .footerBtn {
+      transform: translateY(55px);
+      background: #E9573F;
+      border: 1px solid #E9573F;
+      box-shadow: 0px 10px 20px rgba(233, 87, 63, 0.22);
+      border-radius: 60px;
+      margin-right: 20px;
+      height: 50px;
+      width: 218px;
+      font-weight: 700;
+      font-size: 18px;
+      color: white;
+      line-height: 130%;
+      span {
+        background-color: white;
+        margin-right: 10px;
+        width: 14px;
+      }
+
+      &:last-child {
+        width: 168px;
+        margin-right: 0;
+        background: #8CC152;
+        box-shadow: 0px 20px 20px rgba(140, 193, 82, 0.22);
+        border-radius: 60px;
+        border: 1px solid #8CC152;
+      }
+    }
+  }
+
+  .decTabel{
+    margin-top: 50px;
+    background: $color-white;
+    box-shadow: 0px 0px 20px rgba(17, 24, 39, 0.05);
+    backdrop-filter: blur(40px);
+    border-radius: 16px;
+    padding: 30px;
+    z-index: 9999;
+    position: relative;
+    .page{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      z-index: 99999;
+      .fil{
+        display: flex;
+        align-items: center;
+        p{
+          margin-right: 10px;
+        }
+      }
+      span{
+        background-color: $color-newBlue;
+        margin-right: 10px;
+      }
+
+
+    }
+    .uploadBtn{
+      padding: 8.5px 20px ;
+      color: $color-newBlue;
+      background-color: transparent;
+      border: 1px solid #B6BCCD;
+      border-radius: 8px;
+      height: 39px;
+      margin-left: 20px;
+      font-weight: 700;
+      font-size: 17px;
+      line-height: 22px;
+    }
+    .mainTable{
+      margin-top: 20px;
+      table{
+        width: 100%;
+        border-spacing: 0;
+        tr{
+          &:nth-child(1){
+            background: #F6F6F7;
+            overflow: hidden;
+          }
+          &:nth-child(odd){
+            background: #F6F6F7;
+          }
+          &:nth-last-child(1){
+            border-bottom: 1px solid #DDEAFF;
+            td{
+              border-bottom: 1px solid #DDEAFF;
+
+              &:nth-last-child(1){
+                border-bottom-right-radius: 8px;
+              }
+              &:nth-child(1){
+                border-bottom-left-radius: 8px;
+              }
+            }
+          }
+          th{
+            border-top: 1px solid #DDEAFF;
+            //height: 61px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            text-align: left;
+            padding: 16px 10px;
+            &:nth-child(1){
+              border-top: 1px solid #DDEAFF;
+              border-top-left-radius: 8px;
+              overflow: hidden;
+              border-left: 1px solid #DDEAFF;
+              padding-left: 26px;
+            }
+            &:nth-child(2){
+              padding-left: 10px;
+            }
+            &:nth-last-child(1){
+              padding-left: 10px;
+              border-top-right-radius: 8px;
+              border-right: 1px solid #DDEAFF;
+
+            }
+          }
+
+
+
+
+          td{
+            padding: 16px 10px;
+            text-align: left;
+
+            p{
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 150%;
+              color: #777B82;
+              margin: 0;
+              margin-top: 5px;
+            }
+            &:nth-child(1){
+              border-left: 1px solid #DDEAFF;
+              padding-left: 26px;
+            }
+            &:nth-child(2){
+              padding-left: 10px;
+              padding-right: 10px;
+
+            }
+            &:nth-last-child(1){
+              border-right: 1px solid #DDEAFF;
+              position: relative;
+              button{
+                background-color: transparent;
+                span{
+                  background: #777B82;
+                }
+              }
+              .control{
+                //display: none;
+                width: 250px;
+                //height: 200px;
+                z-index: 99999999999;
+                background: $color-white;
+                box-shadow: 2px 20px 20px rgba(135, 138, 146, 0.16);
+                border-radius: 8px;
+                position: absolute;
+                left: -215px;
+                top: 60px;
+                overflow: hidden;
+                button{
+                  width: 100%;
+                  padding-top: 15px;
+                  font-size: 18px;
+                  padding-left: 18px;
+                  line-height: 20px;
+                  padding-bottom: 15px;
+                  display: flex;
+                  align-items: center;
+                  font-weight: 400;
+                  justify-content: left;
+                  &:hover{
+                    background-color: $color-newBlue;
+                    color: $color-white;
+                    span{
+                      background-color: $color-white;
+                    }
+                  }
+                  span{
+                    background-color: $color-newBlack;
+                    margin-right: 12px;
+                    width: 16px;
+
+                  }
+                }
+              }
+            }
+
+          }
+        }
+      }
+    }
+
+  }
+
+}
+
+.ContractMaker {
+  .path {
+    color: #B6BCCD;
+
+    img {
+      margin: 0 20px;
+    }
+  }
+
+  .maker {
+    @extend %allCard;
+
+    b {
+      @extend %allTitle;
+      margin-bottom: 30px;
+      display: block;
+    }
+
+    label {
+      color: #282F38;
+      font-size: 16px;
+      margin-bottom: 10px;
+      display: block;
+      position: relative;
+    }
+
+
+    .group {
+      margin-right: 20px;
+      margin-top: 0;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .subject {
+    margin-top: 30px;
+    padding-bottom: 0;
+    @extend %allCard;
+ .serviceType{
+   textarea{
+     border: 1px solid #B3C3EE;
+     border-radius: 8px;
+     background-color: #ffffff;
+     height: 120px;
+
+   }
+ }
+    .deadline {
+      width: 25%;
+      margin-right: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
+      &:last-child {
+        width: 50%;
+      }
+    }
+
+    .footerBtn {
+      transform: translateY(25px);
+      background: #325ECD;
+      box-shadow: 0px 20px 20px rgba(21, 37, 126, 0.22);
+      border-radius: 60px;
+      margin-right: 20px;
+      font-weight: 700;
+      font-size: 18px;
+      color: white;
+      padding: 12px 40px;
+      span {
+        background-color: white;
+        margin-right: 10px;
+      }
+
+      &:last-child {
+        margin-right: 0;
+        background: #8CC152;
+        box-shadow: 0px 20px 20px rgba(140, 193, 82, 0.22);
+        border-radius: 60px;
+        border: 1px solid #8CC152;
+      }
+    }
+  }
+
+  .signContract {
+    margin-top: 55px;
+    @extend %allCard;
+    padding-bottom: 30px;
+
+    .document {
+      width: 32%;
+      img{
+        width: 100%;
+      }
+      button{
+        background: #E5E6ED;
+        border-radius: 8px;
+        width: 100%;
+        height: 63px;
+        margin-bottom: 30px;
+        text-align: left;
+        padding: 20px 30px;
+        box-sizing: border-box;
+        font-weight: 700;
+        font-size: 18px;
+        color: #B6BCCD;
+        &:last-child{
+          margin-bottom: 0;
+        }
+      }
+      .activeBtn{
+        background: #8CC152;
+        box-shadow: 0px 10px 20px -10px rgba(30, 45, 86, 0.2);
+        color: white;
+      }
+    }
+  }
+}

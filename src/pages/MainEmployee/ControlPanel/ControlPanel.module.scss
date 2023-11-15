@@ -1,0 +1,767 @@
+@import "../../../styles/colors";
+
+.firstControl{
+    min-height: 100%;
+  .box{
+    background: $color-white;
+    border: 1px solid #D4E5FF;
+    box-shadow: 0px 10px 20px rgba(135, 138, 146, 0.15);
+    border-radius: 8px;
+    width: 100%;
+    .controlHeader{
+      padding: 30px;
+      display: flex;
+      justify-content: space-between;
+      div{
+        display: flex;
+        align-items: center;
+
+        h3{
+          font-size: 16px;
+          line-height: 24px;
+          padding-left: 20px;
+          border-left: 1px solid #F6F6F7;
+          margin-left: 20px;
+
+        }
+        span{
+          background-color: $color-newBlack;
+        }
+        button{
+          padding: 0;
+          background-color: transparent;
+        }
+      }
+    }
+    .controlContent{
+      border-top:1px solid $color-bg;
+      display: flex;
+      height: 100%;
+      .controlContentItems{
+        //padding: 20px 30px;
+        padding: 30px  30px 0px 30px;
+        width: 50%;
+        position: relative;
+        height: calc(100vh - 300px);
+        overflow-y: auto;
+        &:nth-child(1){
+          border-right: 1px solid $color-bg;
+        }
+        &:nth-child(2){
+          border-left: 1px solid $color-bg;
+        }
+        .controlContentItemsHeader{
+          display: flex;
+          div{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: $color-bg;
+            padding-left: 30px;
+            padding-right: 5px;
+            height: 42px;
+            border-radius: 5px;
+            h2{
+              font-size: 20px;
+              line-height: 23px;
+              color: $color-newBlack;
+              font-weight: 400;
+            }
+            button{
+              span{
+                width: 14px;
+              }
+            }
+          }
+          button{
+            width: 42px;
+            height: 42px;
+            background-color: $color-bg;
+            margin-left: 10px;
+            border-radius: 5px;
+            span{
+              background-color: $color-newBlack;
+            }
+          }
+        }
+        .summs{
+          display: flex;
+          margin-top: 30px;
+          background-color: transparent;
+          width: 100%;
+
+          .prTitle{
+            width: 200px;
+            padding-top: 5px;
+            padding-left: 30px;
+          }
+          p{
+            text-align: right;
+            margin: 0;
+            font-size: 16px;
+          }
+          div{
+            h6{
+              min-width: 90px;
+              display: block;
+              margin: 0;
+              font-size: 12px;
+              text-align: right;
+              &:nth-child(1){
+                color: $color-newBlue;
+              }
+              &:nth-child(2){
+                color: $color-newGreen;
+              }
+            }
+          }
+          .progress{
+            width: 100%;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-top: 4px;
+            div{
+              display: block;
+              border-radius: 4px;
+              height: 10px;
+              &:nth-child(1){
+                background-color: $color-newBlue;
+              }
+              &:nth-child(2){
+                margin-top: 5px;
+                background-color: $color-newGreen;
+              }
+            }
+          }
+        }
+        .SecondSumms{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-top: 10px;
+          .prTitle{
+            p{
+              font-weight: 400;
+              font-size: 16px;
+            }
+          }
+          .progress {
+            display: flex;
+            align-items: center;
+              .dots{
+                display: flex;
+                align-items: center;
+                background: #F6F6F7;
+                border-radius: 5px;
+                padding: 13px 17px;
+                div{
+                  width: 8px;
+                  display: block;
+                  height: 8px;
+                  border-radius: 50%;
+                  margin-right: 5px;
+                }
+                p{
+                  margin: 0;
+                  padding-right: 14px;
+                }
+                &:nth-child(1){
+                  div{
+                    background-color: $color-newBlue;
+                  }
+                  p{
+                    color: $color-newBlue;
+                  }
+                  span{
+                    background-color: $color-newBlue;
+                  }
+                }
+                &:nth-child(2){
+                  margin-left: 6px;
+                  div{
+                    background-color: $color-newRed;
+                  }
+                  p{
+                    color: $color-newRed;
+                  }
+                  span{
+                    background-color: $color-newRed;
+                  }
+                }
+              }
+            .downloadBtn{
+              margin-left: 12px;
+              button{
+                padding: 16px;
+                background-color: transparent;
+                border: 1px solid #EBEDF1;
+                border-radius: 5px;
+                span{
+                  background-color: $color-newBlack;
+                }
+              }
+            }
+          }
+          }
+        .controlContentItemsFooter{
+          height: 80px;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          position: sticky;
+          bottom: -2px;
+          background-color: #FFFFFF;
+          .statusBlue{
+            display: flex;
+            align-items: center;
+            margin-right: 30px;
+            div{
+              width: 8px;
+              height: 8px;
+              background-color: $color-newBlue;
+              border-radius: 50%;
+              margin-right: 7px;
+            }
+            span{
+              color: $color-newBlue;
+              font-weight: 300;
+              font-size: 14px;
+              line-height: 150%;
+            }
+          }
+          .statusGreen{
+            display: flex;
+            align-items: center;
+            margin-right: 30px;
+            div{
+              width: 8px;
+              height: 8px;
+              background-color: $color-newGreen;
+              border-radius: 50%;
+              margin-right: 7px;
+            }
+            span{
+              color: $color-newGreen;
+              font-weight: 300;
+              font-size: 14px;
+              line-height: 150%;
+            }
+          }
+          .period{
+            align-items: center;
+            margin-left: auto;
+            display: flex;
+            label{
+              color: #777B82;
+            }
+            input{
+              margin-left: 15px;
+              width: 200px;
+              height: 30px;
+              background: #EBEDF1;
+              border-radius: 8px;
+              border: none;
+              padding: 9px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.IncomingMessages{
+  .path {
+    margin: 20px 0 20px 0;
+    img {
+      margin: 0 20px;
+    }
+    span {
+      color: #B6BCCD;
+    }
+  }
+
+  .status{
+    h5{
+    .mlsl{
+      padding-right: 10px;
+      padding-left: 10px;
+       display: inline-block;
+    }
+    }
+  }
+  .mainCard {
+    padding: 15px 30px;
+    background: $color-white;
+    box-shadow: 0 0 20px rgba(17, 24, 39, 0.05);
+    backdrop-filter: blur(40px);
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h1 {
+      font-size: 28px;
+      line-height: 33px;
+      font-weight: bold;
+      margin: 0;
+      color: #282F38;
+    }
+    div{
+      a {
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+        height: 50px;
+        background: #325ECD;
+        border-radius: 8px;
+        font-weight: 700;
+        font-size: 18px;
+        color: white;
+        margin-right: 20px;
+        span {
+          background-color: white;
+          margin-right: 10px;
+        }
+      }
+      .month{
+        width: 150px;
+        margin-left: 10px;
+      }
+    }
+  }
+  .mainTable{
+    background: $color-white;
+    box-shadow: 0px 0px 20px rgba(17, 24, 39, 0.05);
+    backdrop-filter: blur(40px);
+    border-radius: 16px;
+    padding: 30px;
+    margin-top: 30px;
+    .items{
+      background: $color-white;
+      border: 1px solid #EBEDF1;
+      border-radius: 8px;
+      padding: 22.5px 30px;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      h4{
+        margin: 0;
+      }
+      .status{
+        display: flex;
+        align-items: center;
+        p{
+          color: $color-newBlack;
+          margin: 0;
+          &:nth-child(2){
+            color: #B6BCCD;
+            margin-left: 10px;
+            margin-right: 10px;
+          }
+        }
+        span{
+          margin-left: 20px;
+          background-color: $color-newRed;
+        }
+      }
+    }
+    .active{
+      background-color: $color-bg;
+      .status{
+        span{
+          background-color: $color-newGreen;
+        }
+      }
+    }
+  }
+  .sendMessage{
+    display: flex;
+    align-items: baseline;
+    h3{
+      color: $color-newBlack;
+      font-size: 28px;
+      margin: 0;
+      line-height: 33px;
+    }
+    .leftPair{
+      display: inline-block;
+      width: calc(66% - 20px);
+      margin-right: 20px;
+      padding: 30px;
+      background-color: $color-white;
+      box-shadow: 0px 0px 20px rgba(17, 24, 39, 0.05);
+      backdrop-filter: blur(40px);
+      border-radius: 16px;
+      textarea{
+        height: 150px;
+      }
+      .forFileLabel{
+        background: #EBEDF1;
+        border: 1px solid #777B82;
+        border-radius: 8px;
+        font-size: 17px;
+        line-height: 22px;
+        display: inline-block;
+        color: #777B82;
+        padding: 10px 30px;
+        margin-right: 20px;
+      }
+      .forFile{
+        display: none;
+      }
+      .fileFormats{
+        margin-top: 30px;
+        display: flex;
+        div{
+          padding: 10px 20px;
+          border: 1px solid #B6BCCD;
+          border-radius: 8px;
+          margin-right: 10px;
+          span{
+            background-color: $color-newRed;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+    .rightPair{
+      display: inline-block;
+      width: 33%;
+      padding: 30px;
+      background-color: $color-white;
+      box-shadow: 0px 0px 20px rgba(17, 24, 39, 0.05);
+      backdrop-filter: blur(40px);
+      border-radius: 16px;
+    }
+  }
+  .viewMessage{
+    background: $color-white;
+    box-shadow: 0px 0px 20px rgba(17, 24, 39, 0.05);
+    backdrop-filter: blur(40px);
+    padding: 30px;
+    border-radius: 16px;
+    position: relative;
+    .items{
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      h4{
+        margin: 0;
+        font-size: 28px;
+        color: $color-newBlack;
+      }
+      .status{
+        display: flex;
+        align-items: center;
+        p{
+          color: $color-newBlack;
+          margin: 0;
+          &:nth-child(2){
+            color: #B6BCCD;
+            margin-left: 10px;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+    p{
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 150%;
+      color: $color-newBlack;
+    }
+    .viewMessageFooter{
+      display: flex;
+      margin-top: 30px;
+      justify-content: space-between;
+      .formats{
+        button{
+          color: #1E2D56;
+          padding: 10px 20px;
+          background: #F5F5FB;
+          border: 1px solid #E5E6ED;
+          border-radius: 5px;
+          margin-right: 5px;
+          span{
+            background-color: #1E2D56 ;
+          }
+        }
+      }
+      h5{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        span{
+          color: #B6BCCD;
+          margin-right: 3px;
+        }
+      }
+    }
+    .sendBtn{
+      bottom: -25px;
+      background: $color-newBlue;
+      box-shadow: 0px 20px 20px rgba(21, 37, 126, 0.22);
+      border-radius: 60px;
+      color: $color-white;
+      padding: 12px 40px;
+      left: calc(50% - 186px/2);
+      position: absolute;
+      font-weight: 700;
+      font-size: 18px;
+    }
+    .sentViewMessage{
+      display: flex;
+      .sentViewMessageLeftContent{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: $color-white;
+        padding: 10px 20px;
+        border: 1px solid #EBEDF1;
+        border-radius: 8px;
+        margin-top: 10px;
+        p{
+          color: $color-newBlack;
+        }
+        div{
+          button{
+            width: 40px;
+            height: 40px;
+            background: #F5F5FB;
+            border: 1px solid #E5E6ED;
+            border-radius: 5px;
+            margin-left: 10px;
+            span{
+              background-color: $color-newBlack;
+            }
+          }
+        }
+      }
+      .sentViewMessageLeft{
+        width: 100%;
+        margin-right: 20px;
+        .sentViewMessageLeftHeader{
+          display: flex;
+          justify-content: space-between;
+          background: rgba(90, 176, 99, 0.2);
+          padding: 19px 30px;
+          align-items: center;
+          border-radius: 5px;
+          p{
+            margin: 0;
+          }
+          span{
+            background-color: $color-newGreen;
+            margin-right: 10px;
+          }
+        }
+      }
+      .sentViewMessageRight{
+        width: 100%;
+        margin-right: 20px;
+        .sentViewMessageRightHeader{
+          padding: 19px 30px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          background: rgba(211, 99, 119, 0.2);
+          border-radius: 5px;
+          p{
+            margin: 0;
+          }
+          span{
+            background-color: $color-newRed;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+  .sendAnswer{
+    display: flex;
+    align-items: baseline;
+    position: relative;
+    h3{
+      color: $color-newBlack;
+      font-size: 28px;
+      margin: 0;
+      line-height: 33px;
+    }
+    .leftPair{
+      padding: 30px;
+      background-color: $color-white;
+      box-shadow: 0px 0px 20px rgba(17, 24, 39, 0.05);
+      backdrop-filter: blur(40px);
+      border-radius: 16px;
+      textarea{
+        height: 150px;
+      }
+      .forFileLabel{
+        background: #EBEDF1;
+        border: 1px solid #777B82;
+        border-radius: 8px;
+        font-size: 17px;
+        line-height: 22px;
+        display: inline-block;
+        color: #777B82;
+        padding: 10px 30px;
+        margin-right: 20px;
+      }
+      .forFile{
+        display: none;
+      }
+      .fileFormats{
+        margin-top: 30px;
+        display: flex;
+        div{
+          padding: 10px 20px;
+          border: 1px solid #B6BCCD;
+          border-radius: 8px;
+          margin-right: 10px;
+          span{
+            background-color: $color-newRed;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+    .rightPair{
+      display: inline-block;
+      width: 33%;
+      padding: 30px;
+      background-color: $color-white;
+      box-shadow: 0px 0px 20px rgba(17, 24, 39, 0.05);
+      backdrop-filter: blur(40px);
+      border-radius: 16px;
+    }
+  }
+}
+.SentIncomingMessages{
+  .path {
+    margin: 20px 0 20px 0;
+    img {
+      margin: 0 20px;
+    }
+    span {
+      color: #B6BCCD;
+    }
+  }
+
+  .status{
+    h5{
+    .mlsl{
+      padding-right: 10px;
+      padding-left: 10px;
+       display: inline-block;
+    }
+    }
+  }
+  .mainCard {
+    padding: 15px 30px;
+    background: $color-white;
+    box-shadow: 0 0 20px rgba(17, 24, 39, 0.05);
+    backdrop-filter: blur(40px);
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h1 {
+      font-size: 28px;
+      line-height: 33px;
+      font-weight: bold;
+      margin: 0;
+      color: #282F38;
+    }
+    div{
+      a {
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 13px;
+        padding-bottom: 13px;
+        height: 50px;
+        background: #325ECD;
+        border-radius: 8px;
+        font-weight: 700;
+        font-size: 18px;
+        color: white;
+        margin-right: 20px;
+        span {
+          background-color: white;
+          margin-right: 10px;
+        }
+      }
+      .month{
+        width: 150px;
+        margin-left: 10px;
+      }
+    }
+  }
+  .mainTable{
+    background: $color-white;
+    box-shadow: 0px 0px 20px rgba(17, 24, 39, 0.05);
+    backdrop-filter: blur(40px);
+    border-radius: 16px;
+    padding: 30px;
+    margin-top: 30px;
+    position: relative;
+    z-index: 999;
+    .interval{
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 30px;
+      div{
+          label{
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 150%;
+            color: #777B82;
+            padding-right: 15px;
+          }
+        .month{
+          width: 120px;
+        }
+        .zpstr{
+          width: 95px;
+        }
+        div{
+         &:nth-child(2){
+           label{
+             padding-left: 50px;
+           }
+         }
+        }
+      }
+    }
+    .items{
+      background: $color-white;
+      border: 1px solid #EBEDF1;
+      border-radius: 8px;
+      padding: 22.5px 30px;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      h4{
+        margin: 0;
+        margin-right: 6px;
+      }
+      .status{
+        display: flex;
+        align-items: center;
+        .date{
+          margin-left: 70px;
+        }
+        p{
+          margin: 0;
+        }
+        .birdCircle{
+          background-color: $color-newGreen;
+        }
+        span{
+          margin-left: 20px;
+          background-color: $color-newRed;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}

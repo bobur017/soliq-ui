@@ -1,0 +1,287 @@
+@import "../../../styles/colors";
+
+.interactiveServices {
+
+}
+
+.legalPersonalTaxDebt {
+  .forms {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(17, 24, 39, 0.05);
+    backdrop-filter: blur(40px);
+    border-radius: 16px;
+    padding: 30px;
+
+    input {
+      padding-left: 20px;
+      height: 50px;
+    }
+
+    input:first-child {
+      border-radius: 8px 0px 0px 8px;
+      display: inline-block;
+    }
+
+    button {
+      background: #325ECD;
+      border-radius: 0px 8px 8px 0px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+
+      span {
+        background-color: white;
+      }
+    }
+  }
+
+  .path {
+    margin: 20px 0 20px 0;
+
+    img {
+      margin: 0 20px;
+    }
+
+    span {
+      color: #B6BCCD;
+    }
+  }
+
+
+  /*  h1{
+      margin-bottom: 45px;
+    }
+    .rightBtn{
+      flex-shrink: 0;
+    }*/
+}
+
+.legalPersonalTaxDebtInfo {
+  margin-top: 30px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 20px rgba(17, 24, 39, 0.05);
+  backdrop-filter: blur(40px);
+  border-radius: 16px;
+  padding: 20px 30px 50px 30px;
+
+  .region {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #282F38;
+  }
+
+  .forms{
+
+    h1{
+      margin: 0;
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 33px;
+    }
+  }
+
+
+  .download {
+    background: #325ECD;
+    border-radius: 8px;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 130%;
+    padding: 13px 30px;
+    display: inline-block;
+
+    span {
+      width: 18px;
+      height: 18px;
+      margin-right: 10px;
+      background-color: white;
+    }
+  }
+
+  .payment {
+    background: #8CC152;
+    box-shadow: 0px 20px 20px rgba(140, 193, 82, 0.22);
+    border-radius: 60px;
+    width: 215px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 18px;
+    color: white;
+    transform: translateY(75px);
+
+    span {
+      background-color: white;
+      margin-right: 10px;
+    }
+  }
+
+  /*  background: rgba(255, 255, 255, 0.2);
+    border: 1px solid #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(17, 24, 39, 0.05);
+    backdrop-filter: blur(40px);
+    margin-top: 50px;
+    padding: 30px 30px 36px;
+
+    h2{
+      margin-top: 0;
+      margin-bottom: 30px;
+      font-size: 20px;
+      line-height: 23px;
+      color: $color-icon;
+    }
+
+    .legalPersonalTaxDebtInfoItem{
+      background: #FFFFFF;
+      box-shadow: 0px 0px 20px rgba(0, 53, 168, 0.05);
+      border-radius: 5px;
+      padding: 15px 30px;
+      margin-bottom: 10px;
+      p{
+        margin: 0;
+        font-size: 16px;
+        line-height: 150%;
+        font-weight: 400;
+        color: $color-icon;
+      }
+
+      .download{
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        background-color: #F8F8FD;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        span{
+          background-color: $color-icon;
+          width: 22px;
+          height: 22px;
+
+        }
+      }
+
+      .debt{
+        background-color: rgba(211, 99, 119, 0.1);
+        border: 1px solid #D36377;
+        border-radius: 5px;
+        padding: 12px 15px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        display: flex;
+        align-items: center;
+        letter-spacing: -0.006em;
+        color: #D36377;
+        margin-top: 15px;
+      }
+    }
+
+    button{
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+      margin-top: 30px;
+    }*/
+}
+
+
+  .debtInfo {
+    margin-top: 30px;
+    background-color: white;
+    box-shadow: 0px 0px 20px rgba(17, 24, 39, 0.05);
+    backdrop-filter: blur(40px);
+    border-radius: 16px;
+    padding: 20px  0px 50px 30px;
+    margin-bottom: 50px;
+    position: relative;
+    .region {
+      margin-top: 30px;
+      color: #282F38;
+    }
+    .debtInfoTitle{
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      color: $color-newBlack;
+    }
+    .itemList{
+      display: flex;
+      flex-wrap: wrap;
+      .itemdebtInfo{
+        padding-right: 30px;
+        width: 50%;
+        padding-bottom: 20px;
+        margin-top: 20px;
+        div{
+          &:hover{
+            background: #D4E5FF;
+            border: 1px solid #174AA4;
+          }
+          border: 1px solid transparent;
+
+          padding: 20px;
+          background: #F6F6F7;
+          border-radius: 8px;
+          h4{
+            font-weight: 700;
+            margin: 0;
+            font-size: 18px;
+            line-height: 130%;
+            color: $color-newBlack;
+          }
+          h5{
+            margin: 0;
+            span{
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 150%;
+              &:nth-child(2){
+                margin-left: 10px;
+              }
+            }
+
+          }
+          h2{
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 150%;
+            margin: 0;
+            padding: 10px 0 10px 0px;
+            &.taxActive{
+              color: #548123;
+            }
+            &.taxInActive{
+              color: $color-newRed;
+            }
+          }
+        }
+
+      }
+    }
+    .payment{
+      background: #B6BCCD
+    ;
+      box-shadow: 0px 20px 20px rgba(182, 188, 205, 0.22);
+      border-radius: 60px;
+      position: absolute;
+      right: 30px;
+      bottom: -25px;
+      padding: 14.5px 40px;
+      height: 50px;
+      font-weight: 700;
+      font-size: 18px;
+      color: white;
+      span{
+        background-color: white;
+        margin-right: 10px;
+      }
+    }
+  }
+

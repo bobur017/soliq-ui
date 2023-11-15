@@ -1,0 +1,138 @@
+/**
+ * Created by Watson on 09.05.2022.
+ */
+
+@import "../../styles/colors";
+
+.compServiceControl{
+  display: flex;
+  justify-content: space-between;
+  .controlCancelBtn, .controlSaveBtn{
+    button{
+      padding: 19px;
+      padding-bottom: 19px;
+      box-shadow: 0px 10px 20px -10px rgba(30, 45, 86, 0.2);
+      border-radius: 5px;
+      color: $color-white;
+      width: 175px;
+    }
+
+  }
+  .controlCancelBtn{
+    button{
+      background-color: $color-red;
+    }
+  }
+  .controlSaveBtn{
+    button{
+      background-color: $color-blue;
+    }
+  }
+}
+.lastInputForControlBtn{
+  padding-right: 55px;
+}
+.rightBtnGroup{
+  flex-shrink: 0;
+  margin-left: 20px;
+}
+.yurCompServiceControl{
+  margin-top: 30px;
+}
+.computerServicesAdvice{
+  //.serviceType{
+  //  margin-bottom: 35px;
+  //  label{
+  //    margin-bottom: 10px;
+  //    position: relative;
+  //    padding-left: 30px;
+  //  }
+  //  .withStar{
+  //    color: $color-red;
+  //    position: absolute;
+  //    top: -8px;
+  //    margin-left: 5px;
+  //  }
+  //  .customSelect{
+  //    margin-top: 10px !important;
+  //
+  //  }
+  //}
+
+
+
+  .path {
+    margin: 20px 0 20px 0;
+    img {
+      margin: 0 20px;
+    }
+    span {
+      color: #B6BCCD;
+    }
+  }
+  .plusBtn{
+    margin-top: auto;
+
+    button{
+      height: 50px;
+      width: 50px;
+      border-radius: 8px;
+      background-color: $color-newBlue;
+    }
+    span{
+      background-color: $color-white;
+    }
+  }
+  .deleteBtn{
+    margin-top: auto;
+
+    button{
+      height: 50px;
+      width: 50px;
+      border-radius: 8px;
+      background-color: $color-newRed;
+    }
+    span{
+      background-color: $color-white;
+    }
+  }
+
+}
+.yurAndPhysicalAppeal{
+  .path {
+    margin: 20px 0 20px 0;
+    img {
+      margin: 0 20px;
+    }
+    span {
+      color: #B6BCCD;
+    }
+  }
+  .plusBtn{
+    margin-top: auto;
+
+    button{
+      height: 50px;
+      width: 50px;
+      border-radius: 8px;
+      background-color: $color-newBlue;
+    }
+    span{
+      background-color: $color-white;
+    }
+  }
+  .deleteBtn{
+    margin-top: auto;
+
+    button{
+      height: 50px;
+      width: 50px;
+      border-radius: 8px;
+      background-color: $color-newRed;
+    }
+    span{
+      background-color: $color-white;
+    }
+  }
+
+}

@@ -1,0 +1,340 @@
+/**
+ * Created by Sherlock on 03.05.2022.
+ */
+@import "../../../styles/colors";
+
+.yurTaxInfo {
+  .forms {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(17, 24, 39, 0.05);
+    backdrop-filter: blur(40px);
+    border-radius: 16px;
+    padding: 30px;
+
+    input {
+      padding-left: 20px;
+      height: 50px;
+    }
+
+    input:first-child {
+      border-radius: 8px 0px 0px 8px;
+      display: inline-block;
+    }
+
+    button {
+      background: #325ECD;
+      border-radius: 0px 8px 8px 0px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+
+      span {
+        background-color: white;
+      }
+    }
+  }
+
+  .path {
+    margin: 20px 0 20px 0;
+    img {
+      margin: 0 20px;
+    }
+    span {
+      color: #B6BCCD;
+    }
+  }
+
+
+}
+
+.debtInfo {
+  margin-top: 30px;
+  background-color: white;
+  box-shadow: 0px 0px 20px rgba(17, 24, 39, 0.05);
+  backdrop-filter: blur(40px);
+  border-radius: 16px;
+  padding: 20px  0px 50px 30px;
+  margin-bottom: 50px;
+  position: relative;
+  .region {
+    margin-top: 30px;
+    color: #282F38;
+  }
+  .debtInfoTitle{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: $color-newBlack;
+  }
+  .itemList{
+    display: flex;
+    flex-wrap: wrap;
+    .itemdebtInfo{
+
+      padding-right: 30px;
+      width: 50%;
+      padding-bottom: 20px;
+      div{
+        &:hover{
+          background: #D4E5FF;
+          border: 1px solid #174AA4;
+        }
+        border: 1px solid transparent;
+
+        padding: 20px;
+        margin-top: 20px;
+        background: #F6F6F7;
+        border-radius: 8px;
+        h4{
+          font-weight: 700;
+          margin: 0;
+          font-size: 18px;
+          line-height: 130%;
+          color: $color-newBlack;
+        }
+        h5{
+          margin: 0;
+          span{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            &:nth-child(2){
+              margin-left: 10px;
+            }
+          }
+
+        }
+        h2{
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 150%;
+          margin: 0;
+          padding: 10px 0 10px 0;
+          &.taxActive{
+            color: #548123;
+          }
+          &.taxInActive{
+            color: $color-newRed;
+          }
+        }
+      }
+
+    }
+  }
+  .payment{
+    background: #8CC152;
+    box-shadow: 0px 20px 20px rgba(140, 193, 82, 0.22);
+    border-radius: 60px;
+    position: absolute;
+    right: 30px;
+    bottom: -25px;
+    padding: 14.5px 40px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 18px;
+    color: white;
+    span{
+      background-color: white;
+      margin-right: 10px;
+    }
+  }
+}
+
+
+.yurTaxDebtInfo {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid #FFFFFF;
+  box-shadow: 0px 0px 20px rgba(17, 24, 39, 0.05);
+  backdrop-filter: blur(40px);
+  margin-top: 50px;
+  padding: 30px 30px 36px;
+
+  h2 {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 20px;
+    line-height: 23px;
+    color: $color-icon;
+  }
+
+  .yurTaxDebtInfoItem {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(0, 53, 168, 0.05);
+    border-radius: 5px;
+    padding: 20px 30px;
+    margin-bottom: 10px;
+
+    p {
+      margin: 0;
+      font-size: 16px;
+      line-height: 150%;
+      font-weight: 400;
+      color: $color-icon;
+    }
+
+    .noteMessage {
+      display: block;
+
+      .noteMessageTitle {
+        background: rgba(211, 99, 119, 0.1);
+        border: 1px solid $color-red;
+        border-radius: 5px;
+        padding: 12px 15px;
+        color: $color-red;
+        margin-top: 15px;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+      }
+    }
+
+    .noteDownload {
+      background: #147AD6;
+      border-radius: 5px;
+      padding: 12px 30px;
+      font-size: 14px;
+      color: $color-white;
+      margin-top: 15px;
+
+      span {
+        background-color: $color-white;
+        width: 22px;
+        height: 22px;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+.YurTaxView{
+  background: #FFFFFF;
+  box-shadow: 0px 0px 20px rgba(17, 24, 39, 0.05);
+  backdrop-filter: blur(40px);
+  border-radius: 16px;
+  margin-top: 30px;
+  padding-top: 40px;
+  padding-bottom: 100px;
+  margin-bottom: 50px;
+
+  .pdfDownload{
+    border: 1px solid #B6BCCD;
+    border-radius: 8px;
+    height: 38px;
+  }
+  .uploadBtn{
+    padding: 8px 20px;
+    border: 1px solid #B6BCCD;
+    border-radius: 8px;
+    background-color: transparent;
+    display:  block;
+    //margin: 20px auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 130%;
+    span{
+      background-color: $color-newBlue;
+      margin-right: 10px;
+    }
+    color: $color-newBlue;
+  }
+  .printBtn{
+    background-color: $color-newBlue;
+    padding: 8px 20px;
+    color: #fff;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 130%;
+    span{
+      background-color: #fff;
+      margin-right: 12px;
+    }
+  }
+  .mainPdfReader{
+    text-align: center;
+  }
+}
+
+.electronContract{
+
+  .mainModal{
+    position: fixed;
+    top: 100px;
+    min-width: 800px;
+    left: calc(50% - 400px);
+    background-color: $color-white;
+    border-radius: 8px;
+    min-height:   365px;;
+    box-shadow:  0px 0px 50px -10px #000;
+
+    .closeBtn{
+      display: block;
+      margin-left: auto;
+      margin-right: 24.5px;
+      background-color: transparent;
+      margin-top: 24.5px;
+
+      span{
+        background: #777B82;
+      }
+    }
+    h3,p{
+      text-align: center;
+
+    }
+    .password {
+      position: relative;
+      margin: 0 auto;
+      padding-top: 30px;
+      label{
+        text-align: left;
+      }
+    }
+    .eyeIcon{
+      background-color: #7F7F7F;
+      position: absolute;
+      bottom: 12.5px;
+      right: 10px;
+      width: 25px;
+      height: 25px;
+      cursor: pointer;
+    }
+    div{
+      text-align: center;
+      margin-top: 40px;
+      margin-bottom: 50px;
+      button{
+        padding-top: 5px;
+        &:nth-child(1){
+          background: #E9573F;
+          box-shadow: 0px 20px 20px rgba(233, 87, 63, 0.22);
+          margin-right: 30px;
+          padding: 13px 63px;
+        }
+        &:nth-child(2){
+          background: #8CC152;
+          padding: 13px 67px;
+          box-shadow: 0px 20px 20px rgba(140, 193, 82, 0.22);
+        }
+        border-radius: 60px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 130%;
+        color: $color-white;
+      }
+    }
+    .timeTitle{
+      color: #777B82;
+      font-weight: 400;
+      font-size: 16px;
+      margin-top: 36px;
+      line-height: 150%;
+      margin-bottom: 30px;
+    }
+  }
+}

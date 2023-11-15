@@ -1,0 +1,161 @@
+@import "src/styles/colors";
+
+.main {
+  padding-bottom: 280px;
+
+  .dashboard {
+    background: white;
+    backdrop-filter: blur(40px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    border: 1px solid #d4e5ff;
+    box-shadow: 0px 10px 20px rgba(135, 138, 146, 0.15);
+    border-radius: 8px;
+
+    span {
+      background-color: $color-icon;
+      width: 20px;
+      height: 20px;
+    }
+
+    h3 {
+      margin: 0;
+      font-size: 22px;
+      line-height: 26px;
+      color: $color-icon;
+    }
+
+    .line {
+      height: 30px;
+      width: 1px;
+      background-color: #e5e6ed;
+      margin: 0 20px;
+    }
+  }
+
+  .mainLinks {
+    color: $color-icon;
+    font-size: 28px;
+    line-height: 33px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -35px;
+  }
+
+  .col {
+    width: 33%;
+    padding-right: 20px;
+    margin-bottom: 20px;
+
+    img {
+      padding-right: 20px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .card {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 20px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+    user-select: none;
+    background: #ffffff;
+    border: 1px solid #d4e5ff;
+    box-shadow: 0px 10px 20px rgba(135, 138, 146, 0.15);
+    border-radius: 8px;
+    position: relative;
+
+    .line {
+      height: 30px;
+      width: 1px;
+      background-color: #e5e6ed;
+      margin: 0 25px;
+    }
+
+    p {
+      margin: 0;
+      font-size: 16px;
+      color: $color-icon;
+      line-height: 150%;
+    }
+
+    .ActiveStar {
+      background-color: #ff9c36;
+      position: absolute;
+      right: 10px;
+      top: 10px;
+    }
+
+    .inActiveStar {
+      background-color: #ebedf1;
+      position: absolute;
+      right: 10px;
+      top: 10px;
+    }
+
+    .dots {
+      margin-right: 5px;
+      display: flex;
+      align-items: center;
+      position: absolute;
+      right: 12px;
+      bottom: 13px;
+
+      div {
+        margin-left: 5px;
+        background-color: #B6BCCD;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  .cardItem {
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 42px;
+    color: $color-icon;
+    background: #ffffff;
+    box-shadow: 0px 0px 20px rgba(0, 53, 168, 0.05);
+    border-radius: 5px;
+    padding: 10px 30px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 0.2s linear;
+    user-select: none;
+
+    &.cardItemBig {
+      line-height: 22px;
+    }
+
+    &:hover {
+      background: linear-gradient(0deg,
+          rgba(20, 122, 214, 0.1),
+          rgba(20, 122, 214, 0.1)),
+        #ffffff;
+      border: 2px solid #147ad6;
+      box-shadow: 0px 0px 30px rgba(0, 53, 168, 0.08);
+      color: $color-blue;
+    }
+  }
+
+  .lineHorizontal {
+    width: 100%;
+    height: 1px;
+    background-color: #e5e6ed;
+    margin-bottom: 20px;
+  }
+}

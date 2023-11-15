@@ -1,0 +1,67 @@
+/**
+ * Created by Watson on 10.05.2022.
+ */
+
+@import "../../styles/colors";
+
+.sendingInvoices{
+  .dwnTitle{
+    h2{
+      font-size: 26px;
+      padding-left: 10px;
+    }
+    .downloadBtn{
+      background-color: transparent;
+      border-radius: 5px;
+      border: 1px solid $color-gray;
+      width: 40px;
+      height: 40px;
+
+    }
+    span{
+      background-color: $color-icon;
+    }
+  }
+  .mainBtn{
+    padding-top: 19px;
+    padding-bottom: 19px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: $color-white;
+    background-color: $color-blue;
+    box-shadow: 0px 10px 20px -10px rgba(30, 45, 86, 0.2);
+    border-radius: 5px;
+  }
+  .taxReport{
+    .taxReportTabelHeader{
+      margin-top: 30px;
+      p{
+        margin: 0;
+        padding-top: 9.5px;
+        padding-bottom: 9.5px;
+        text-align: center;
+        background: rgba(20, 122, 214, 0.1);
+        border-radius: 5px;
+        color: $color-icon;
+        font-size: 14px;
+      }
+    }
+    .taxReportTabelBody{
+      margin-top: 10px;
+      p{
+        margin: 0;
+        padding-top: 19px;
+        padding-bottom: 19px;
+        text-align: center;
+        font-weight: 300;
+        font-size: 16px;
+        box-shadow: 0px 10px 30px -10px rgba(0, 0, 0, 0.05);
+        border-radius: 5px;
+        color: $color-icon;
+        background-color: $color-white;
+      }
+    }
+  }
+
+}
